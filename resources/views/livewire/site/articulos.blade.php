@@ -39,7 +39,7 @@
                     <a href="">
                         <div class="position-relative">
                             <img src="{{ asset('img/servicio.jpg') }}" class="card-img-top" alt="{{ $articulo->titulo }}">
-                            <div class="position-absolute top-0 start-0 p-4">
+                            <div class="position-absolute bottom-0 start-0 p-4">
                                 <a class="btn btn-light btn-sm" href="#" role="button">{{ $articulo->categoria->nombre }}</a>
                             </div>
                         </div>
@@ -81,7 +81,5 @@
             </div>
         </button>
     </div>
-
-    @include('site.includes.modal-articulo')
 
 </div>

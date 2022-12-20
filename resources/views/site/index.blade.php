@@ -45,7 +45,7 @@
                     </ul>
                 </div>
                 <div class="d-lg-none">
-                    <a href="javascript:void(0)"><i class="bi bi-list fs-2 text-light" data-bs-toggle="modal" data-bs-target="#menuModal"></i></a>
+                    <a href="javascript:void(0)"><i class="bi bi-list fs-2 text-light" data-bs-target="#offCanvasNavbar" data-bs-toggle="offcanvas" aria-controls="offCanvasNavbar"></i></a>
                 </div>
             </div>
             <!-- gradient -->
@@ -65,7 +65,7 @@
     </section>
 
     <section id="la-empresa">
-        <div class="container-fluid bg-secondary py-4 py-lg-5">
+        <div class="container-fluid bg-section py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
                 <div class="row justify-content-around align-items-center g-4">
                     <div class="col-lg-5">
@@ -110,7 +110,7 @@
     </section>
 
     <section id="articulos">
-        <div class="container-fluid bg-secondary py-4 py-lg-5">
+        <div class="container-fluid bg-section py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
             <h3 class="h2 fw-black text-center mb-5"><span class="text-primary">ÚLTIMOS</span> TRABAJOS</h3>
                 @livewire('site.articulos')
@@ -159,15 +159,9 @@
         </div>
     </section>
 
-    @include('site.includes.modal-menu')
+    @include('site.includes.canvas-menu')
 
-    @include('site.includes.canvas-consulta-individual')
-
-    @include('site.includes.canvas-proceso-grupal')
-
-    @include('site.includes.canvas-talleres')
-
-    @include('site.includes.boton-wp')
+    @include('site.includes.boton-telefono')
 
 
 @endsection
