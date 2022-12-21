@@ -6,23 +6,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dash\ArticulosComponent;
 use App\Http\Livewire\Dash\CategoriasComponent;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// --------
+
+// FrontEnd
+
+Route::view('/', 'site.index')->name('site.home');
+Route::view('la-empresa', 'site.la-empresa')->name('site.home');
 
 
-
-Route::get('/', function () {
-    return view('site.index');
-})->name('site.home');
-
+// BackEnd
 
 Route::prefix('dashboard')->group(function(){
 

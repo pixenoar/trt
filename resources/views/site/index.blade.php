@@ -10,44 +10,7 @@
 
         <div class="container-fluid position-relative bg-home vh-100 px-0">
             <!-- header -->
-            <div class="fixed-top d-flex justify-content-between align-items-center bg-dark shadow px-4 px-lg-5 py-3">
-                <div>
-                    <a href="{{ route('site.home') }}"><img src="{{ asset('img/svg/logo.svg') }}" alt="Logo" class="img-fluid w-25"></a>
-                </div>
-                <div class="d-none d-lg-block">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="#quien-soy" class="nav-link link-light">La Empresa</a>
-                        </li>
-                        <li class="nav-item dropdown-center">
-                            <a class="nav-link @if(request()->routeIs('institucional.*')) link-secondary fw-bold @else link-light @endif dropdown-toggle" href="#" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
-                            </a>
-                            <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
-                                <li><a class="dropdown-item small" href="">Reforma de casas</a></li>
-                                <li><a class="dropdown-item small" href="">Reforma de oficinas y locales</a></li>
-                                <li><a class="dropdown-item small" href="">Electricidad</a></li>
-                                <li><a class="dropdown-item small" href="">Pintura</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cpa" class="nav-link link-light">Trabajos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#articulos" class="nav-link link-light">Garantía</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contacto" class="nav-link link-light">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contacto" class="nav-link link-light btn btn-primary fw-bold ms-3">Presupuesto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-lg-none">
-                    <a href="javascript:void(0)"><i class="bi bi-list fs-2 text-light" data-bs-target="#offCanvasNavbar" data-bs-toggle="offcanvas" aria-controls="offCanvasNavbar"></i></a>
-                </div>
-            </div>
+            @include('site.includes.header')
             <!-- gradient -->
             <div class="position-absolute bottom-0 start-50 translate-middle-x h-50 w-100 bg-home-grad"></div>            
             <!-- logo + frase -->
@@ -94,8 +57,7 @@
                                     <img src="{{ asset('img/servicio.jpg') }}" alt="" class="img-fluid shadow-sm rounded">
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x h-50 w-100 bg-home-grad rounded"></div>
                                     <div class="position-absolute bottom-0 start-0 px-4 py-3">
-                                        <h3 class="h4 fw-bold text-white">REFORMA DE CASAS</h3>
-                                        <p class="text-white mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <h3 class="h4 fw-bold text-white mb-0">REFORMA DE CASAS</h3>
                                     </div> 
                                 </div>
                             </a>
@@ -112,8 +74,11 @@
     <section id="articulos">
         <div class="container-fluid bg-section py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
-            <h3 class="h2 fw-black text-center mb-5"><span class="text-primary">ÚLTIMOS</span> TRABAJOS</h3>
+                <h3 class="h2 fw-black text-center mb-5"><span class="text-primary">ÚLTIMOS</span> TRABAJOS</h3>
                 @livewire('site.articulos')
+                <div class="text-center mt-5">
+                    <a href="" class="btn btn-primary btn-sm fw-bold text-white" role="button">TODOS LOS TRABAJOS</a>
+                </div>
             </div>
         </div>
     </section>
@@ -136,10 +101,10 @@
 
     <section id="footer">
         <div class="container-fluid bg-dark">
-            <div class="container py-4 py-lg-5">
+            <div class="container py-4">
                 <div class="row justify-content-center g-3">
                     <div class="col-lg-8">
-                        <p class="text-light fw-light text-center text-lg-start mb-0"><span class="fw-bold">Vocación de Orientar</span> © Todos los derechos reservados</p>
+                        <p class="text-white text-center text-lg-start mb-0"><span class="fw-bold">Vocación de Orientar</span> © Todos los derechos reservados</p>
                     </div>
                     <div class="col-lg-4">
                         <ul class="nav justify-content-center justify-content-lg-end">
