@@ -22,7 +22,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" wire:click="close" class="btn btn-dark mx-0" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" wire:target="store" wire:loading.class="disabled">
+                    <button type="submit" class="btn btn-primary text-white" wire:target="store" wire:loading.class="disabled">
                         <div wire:loading.remove wire:target="store">
                             Guardar
                         </div>                        

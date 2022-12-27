@@ -7,17 +7,19 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration{
 
     public function up(){
-        Schema::create('categorias', function (Blueprint $table) {
+        Schema::create('fotos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('descripcion')->nullable();
-            $table->string('foto')->nullable();
+            $table->unsignedBigInteger('trabajo_id');
+            $table->string('path');
             $table->unsignedTinyInteger('orden');
+            $table->timestamps();
+            // FKs
+            $table->foreign('trabajo_id')->references('id')->on('trabajos');
         });
     }
 
     public function down(){
-        Schema::dropIfExists('categorias');
+        Schema::dropIfExists('fotos');
     }
 
 };

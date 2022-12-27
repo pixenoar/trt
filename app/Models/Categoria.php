@@ -10,8 +10,8 @@ class Categoria extends Model{
     use HasFactory;
     public $timestamps = false;
 
-    public function articulos(){
-        return $this->hasMany(Articulo::class);
+    public function trabajos(){
+        return $this->hasMany(Trabajo::class);
     }
 
 }

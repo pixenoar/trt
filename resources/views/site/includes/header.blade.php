@@ -5,17 +5,16 @@
     <div class="d-none d-lg-block">
         <ul class="nav">
             <li class="nav-item">
-                <a href="#quien-soy" class="nav-link link-light">La Empresa</a>
+                <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-bold @else link-light @endif">La Empresa</a>
             </li>
             <li class="nav-item dropdown-center">
                 <a class="nav-link @if(request()->routeIs('institucional.*')) link-secondary fw-bold @else link-light @endif dropdown-toggle" href="#" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Servicios
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
-                    <li><a class="dropdown-item small" href="">Reforma de casas</a></li>
-                    <li><a class="dropdown-item small" href="">Reforma de oficinas y locales</a></li>
-                    <li><a class="dropdown-item small" href="">Electricidad</a></li>
-                    <li><a class="dropdown-item small" href="">Pintura</a></li>
+                @foreach($categorias as $categoria)
+                    <li><a class="dropdown-item small" href="">{{ $categoria->nombre }}</a></li>
+                @endforeach
                 </ul>
             </li>
             <li class="nav-item">

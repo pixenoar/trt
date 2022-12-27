@@ -20,7 +20,8 @@ class CategoriasComponent extends Component{
         ]);
 
         $categoria = new Categoria;
-        $categoria->nombre = Str::title($this->nombre);        
+        $categoria->nombre = Str::title($this->nombre);
+        $categoria->orden = Categoria::max('orden') + 1;        
         $categoria->save();
 
         $this->reset(['nombre']);

@@ -7,7 +7,7 @@
                 <h5 class="fw-bold">Categorías</h5>
             </div>
             <div>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCreate">Nuevo</button>
+                <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#modalCreate">Nuevo</button>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Artículos</th>
+                                <th scope="col">Trabajos</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
@@ -26,9 +26,9 @@
                             @forelse($categorias as $categoria)
                                 <tr>
                                     <td>{{ $categoria->nombre }}</td>
-                                    <td>{{ $categoria->articulos->count() }}</td>
+                                    <td>{{ $categoria->trabajos->count() }}</td>
                                     <td>
-                                        <button type="button" wire:click="edit({{ $categoria->id }})"  class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalEdit"><i class="bi bi-pencil"></i></button>
+                                        <button type="button" wire:click="edit({{ $categoria->id }})"  class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalEdit"><i class="bi bi-pencil"></i></button>
                                         <button type="button" wire:click="delete({{ $categoria->id }})"  class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bi bi-trash"></i></button>
                                     </td>
                                 </tr>

@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalEditLabel">Modificar Artículo</h5>
+                <h5 class="modal-title" id="modalEditLabel">Modificar Trabajo</h5>
             </div>
             <form wire:submit.prevent="update">
                 <div class="modal-body p-4">
@@ -25,9 +25,9 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control @error('titulo') is-invalid @enderror" id="titulo" wire:model.defer="titulo" placeholder="Título">
-                                <label for="titulo">Título</label>
-                                @error('titulo')
+                                <input type="text" class="form-control @error('nombre') is-invalid @enderror" id="nombre" wire:model.defer="nombre" placeholder="Nombre">
+                                <label for="nombre">Nombre</label>
+                                @error('nombre')
                                     <span class="invalid-feedback">
                                         {{ $message }}
                                     </span>
@@ -36,46 +36,15 @@
                         </div> 
                         <div class="col-lg-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control @error('subtitulo') is-invalid @enderror" id="subtitulo" wire:model.defer="subtitulo" placeholder="Subtítulo">
-                                <label for="subtitulo">Subtítulo</label>
-                                @error('subtitulo')
+                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror" id="descripcion" wire:model.defer="descripcion" placeholder="Descripción">
+                                <label for="descripcion">Descripción</label>
+                                @error('descripcion')
                                     <span class="invalid-feedback">
                                         {{ $message }}
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-floating">
-                                <textarea class="form-control @error('cuerpo') is-invalid @enderror" wire:model.defer="cuerpo" id="floatingTextarea2" placeholder="Cuerpo" style="height: 15rem"></textarea>
-                                <label for="cuerpo">Cuerpo</label>
-                                @error('cuerpo')
-                                    <span class="invalid-feedback">
-                                        {{ $message }}
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="alert alert-info small mt-1 mb-0 p-2" role="alert">
-                                Ejemplo para insertar link: <code>&lt;a href="https://pixeno.ar" target="_blank"&gt;diseño web&lt;/a&gt;</code>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            @if($moArticulo)
-                                <img src="{{ Storage::url($moArticulo->imagen) }}" class="img-fluid rounded shadow-sm" alt="...">
-                            @endif
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="border rounded p-3">
-                                <label for="imagen" class="form-label">Adjuntar Imagen</label>
-                                <input id="imagen" type="file" wire:model.defer="imagen" class="form-control @error('imagen') is-invalid @enderror">
-                                <div class="form-text">La orientación de la imagen debe ser horizontal.</div>
-                                @error('imagen')
-                                    <span class="invalid-feedback">
-                                        {{ $message }}
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>                    
+                        </div>                  
                     </div>
                 </div>
                 <div class="modal-footer">

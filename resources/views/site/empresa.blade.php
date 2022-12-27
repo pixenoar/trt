@@ -8,11 +8,11 @@
 
     <section id="header">
         @include('site.includes.header')
-        <div class="bg-interior position-relative">
+        <div class="bg-empresa position-relative">
+            <div class="bg-opacity position-absolute top-0 start-0"></div>
             <div class="position-absolute top-50 start-50 translate-middle">
-                <h1 class="text-white fw-bold">TODO REFORMAS TENERIFE</h1>
+                <h1 class="text-white text-center fw-black">TODO REFORMAS TENERIFE</h1>
             </div>
-            
         </div>
     </section>
 

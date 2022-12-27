@@ -11,18 +11,11 @@
                 <a href="#collapseInstitucional" class="nav-link link-light dropdown-toggle ps-0" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseInstitucional">Servicios</a>
                 <div class="collapse" id="collapseInstitucional">
                     <ul class="nav flex-column small ms-3 my-2">
+                    @foreach($categorias as $categoria)
                         <li class="nav-item">
-                            <a href="" class="nav-link link-light">Reforma de casas</a>
+                            <a href="" class="nav-link link-light">{{ $categoria->nombre }}</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link link-light">Reforma de locales y oficinal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link link-light">Electricidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link link-light">Pintura</a>
-                        </li>
+                    @endforeach
                     </ul>
                 </div>
             </li>

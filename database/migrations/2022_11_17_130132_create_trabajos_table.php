@@ -7,13 +7,11 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration{
 
     public function up(){
-        Schema::create('articulos', function (Blueprint $table) {
+        Schema::create('trabajos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('categoria_id');
-            $table->string('titulo');
-            $table->string('subtitulo');
-            $table->text('cuerpo');
-            $table->string('imagen');
+            $table->string('nombre');
+            $table->string('descripcion');
             $table->boolean('estado')->default(1);
             $table->timestamps();
             // FKs
@@ -22,7 +20,7 @@ return new class extends Migration{
     }
 
     public function down(){
-        Schema::dropIfExists('articulos');
+        Schema::dropIfExists('trabajos');
     }
 
 };

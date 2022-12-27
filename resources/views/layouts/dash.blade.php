@@ -11,7 +11,7 @@
 
         @livewireStyles
     </head>
-    <body class="bg-secondary">
+    <body class="bg-section">
         @include('dash.includes.header')
         {{ $slot }}
         @livewireScripts
