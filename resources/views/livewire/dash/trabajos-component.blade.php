@@ -9,7 +9,7 @@
                 <input type="text" class="form-control" id="busqueda" wire:model="busqueda" placeholder="buscar...">
             </div>
             <div>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCreate">Nuevo</button>
+                <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#modalCreate">Nuevo</button>
             </div>
         </div>
 
@@ -38,8 +38,8 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <button type="button" wire:click="show({{ $trabajo->id }})"  class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalShow"><i class="bi bi-eye"></i></button>
-                                        <button type="button" wire:click="edit({{ $trabajo->id }})"  class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalEdit"><i class="bi bi-pencil"></i></button>
+                                        <button type="button" wire:click="fotos({{ $trabajo->id }})"  class="btn btn-primary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#modalFotos"><i class="bi bi-images"></i></button>
+                                        <button type="button" wire:click="edit({{ $trabajo->id }})"  class="btn btn-primary btn-sm text-white" data-bs-toggle="modal" data-bs-target="#modalEdit"><i class="bi bi-pencil"></i></button>
                                     </td>
                                 </tr>
                             @empty
@@ -61,7 +61,7 @@
 
         @include('dash.trabajos.edit')
 
-        @include('dash.trabajos.show')
+        @include('dash.trabajos.fotos')
 
     </div>
 

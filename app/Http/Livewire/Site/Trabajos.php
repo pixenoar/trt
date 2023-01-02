@@ -11,8 +11,14 @@ use App\Models\Trabajo;
 
 class Trabajos extends Component{
 
+    public $moTrabajo;
 
     // --------
+
+    public function verTrabajo($trabajo_id){
+        $this->moTrabajo = Trabajo::find($trabajo_id);
+        usleep(200000);
+    }
 
     public function render(){
         return view('livewire.site.trabajos', [

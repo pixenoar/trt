@@ -5,7 +5,7 @@
         </a>
         <ul class="nav flex-column my-4">
             <li class="nav-item border-bottom border-secondary py-1">
-                <a href="#" class="nav-link link-light ps-0">La Empresa</a>
+                <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-black @else link-light @endif ps-0">La Empresa</a>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
                 <a href="#collapseInstitucional" class="nav-link link-light dropdown-toggle ps-0" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseInstitucional">Servicios</a>
@@ -13,20 +13,20 @@
                     <ul class="nav flex-column small ms-3 my-2">
                     @foreach($categorias as $categoria)
                         <li class="nav-item">
-                            <a href="" class="nav-link link-light">{{ $categoria->nombre }}</a>
+                            <a href="#" class="nav-link link-light">{{ $categoria->nombre }}</a>
                         </li>
                     @endforeach
                     </ul>
                 </div>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
-                <a href="#novedades" class="nav-link link-light ps-0">Trabajos</a>
+                <a href="#" class="nav-link link-light ps-0">Trabajos</a>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
-                <a href="" class="nav-link link-light ps-0">Garantía</a>
+                <a href="#" class="nav-link link-light ps-0">Garantía</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-light ps-0" href="">Contacto</a>
+                <a href="#" class="nav-link link-light ps-0">Contacto</a>
             </li>
         </ul>
         <a href="#" class="btn btn-primary btn-sm fw-bold text-white w-100" role="button">SOLICITAR PRESUPUESTO</a>

@@ -17,6 +17,17 @@
                                     </span>
                                 @enderror
                             </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control @error('nombre') is-invalid @enderror" id="nombre" wire:model.defer="nombre" placeholder="Nombre">
+                                    <label for="nombre">Nombre</label>
+                                    @error('nombre')
+                                        <span class="invalid-feedback">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>                    
                     </div>
                 </div>

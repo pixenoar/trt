@@ -13,7 +13,8 @@ use App\Http\Livewire\Dash\CategoriasComponent;
 
 //Route::view('/', 'site.index')->name('site.home');
 Route::get('/', [SiteController::class, 'index'])->name('site.home');
-Route::view('empresa', 'site.empresa')->name('site.empresa');
+Route::get('empresa', [SiteController::class, 'empresa'])->name('site.empresa');
+//Route::view('empresa', 'site.empresa')->name('site.empresa');
 Route::redirect('empresa.php', 'empresa');
 
 

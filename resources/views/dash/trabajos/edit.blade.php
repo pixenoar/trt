@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalEditLabel">Modificar Trabajo</h5>
+                <h5 class="modal-title" id="modalEditLabel">Modificar</h5>
             </div>
             <form wire:submit.prevent="update">
                 <div class="modal-body p-4">
@@ -36,7 +36,7 @@
                         </div> 
                         <div class="col-lg-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror" id="descripcion" wire:model.defer="descripcion" placeholder="Descripción">
+                                <textarea class="form-control @error('descripcion') is-invalid @enderror" id="descripcion" wire:model.defer="descripcion" placeholder="Descripción" style="height: 8rem"></textarea>
                                 <label for="descripcion">Descripción</label>
                                 @error('descripcion')
                                     <span class="invalid-feedback">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" wire:click="close" class="btn btn-dark mx-0" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" wire:target="update" wire:loading.class="disabled">
+                    <button type="submit" class="btn btn-primary text-white" wire:target="update" wire:loading.class="disabled">
                         <div wire:loading.remove wire:target="update">
                             Guardar
                         </div>                        

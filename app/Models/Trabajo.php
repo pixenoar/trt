@@ -13,4 +13,8 @@ class Trabajo extends Model{
         return $this->belongsTo(Categoria::class);
     }
 
+    public function fotos(){
+        return $this->hasMany(Foto::class);
+    }
+
 }

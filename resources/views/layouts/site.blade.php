@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title')</title>
-        <meta name="description" content="Mediante la orientación vocacional acompañamos a jóvenes y adultos a elegir una carrera o diagramar un proyecto de vida.">
+        <meta name="description" content="@yield('description')">
+        <meta name="keywords" content="@yield('keywords')">
 
-        <meta property="og:title" content="Vocación de Orientar">
-        <meta property="og:image" content="{{ asset('img/vocacion-de-orientar.jpg') }}">
-        <meta name="og:description" content="Mediante la orientación vocacional acompañamos a jóvenes y adultos a elegir una carrera o diagramar un proyecto de vida.">
-        <meta property="og:site_name" content="Vocación de Orientar">
-        <meta property="og:url" content="https://vocaciondeorientar.ar">
+        <meta property="og:title" content="@yield('title')">
+        <meta property="og:image" content="{{ asset('img/todo-reformas-tenerife.jpg') }}">
+        <meta name="og:description" content="@yield('description')">
+        <meta property="og:site_name" content="Todo Reformas Tenerife">
+        <meta property="og:url" content="https://todoreformastenerife.com">
         <meta property="og:type" content="website">
 
         <meta name="format-detection" content="telephone=no">

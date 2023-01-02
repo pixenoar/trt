@@ -13,6 +13,7 @@ use Intervention\Image\Facades\Image;
 
 use App\Models\Trabajo;
 use App\Models\Categoria;
+use App\Models\Foto;
 
 class TrabajosComponent extends Component{
 
@@ -24,6 +25,7 @@ class TrabajosComponent extends Component{
     public $categoria;
     public $nombre;
     public $descripcion;
+    public $foto;
 
     public $categorias;
     public $moTrabajo;
@@ -58,7 +60,7 @@ class TrabajosComponent extends Component{
 
         $trabajo = new Trabajo;
         $trabajo->categoria_id = $this->categoria;
-        $trabajo->nombre = $this->nombre;
+        $trabajo->nombre = Str::title($this->nombre);
         $trabajo->descripcion = $this->descripcion;        
 
         $trabajo->save();
@@ -72,7 +74,7 @@ class TrabajosComponent extends Component{
 
         $this->categoria = $this->moTrabajo->categoria_id;
         $this->nombre = $this->moTrabajo->nombre;
-        $this->desripcion = $this->moTrabajo->descripcion;
+        $this->descripcion = $this->moTrabajo->descripcion;
     }
 
     public function update(){
@@ -84,16 +86,63 @@ class TrabajosComponent extends Component{
         ]);
 
         $this->moTrabajo->categoria_id = $this->categoria;
-        $this->moTrabajo->nombre = $this->nombre;
+        $this->moTrabajo->nombre = Str::title($this->nombre);
         $this->moTrabajo->descripcion = $this->descripcion;
         $this->moTrabajo->save();
 
         
     }
 
-    public function show($trabajo_id){
+    // FOTOS
+
+    public function fotos($trabajo_id){
         $this->moTrabajo = Trabajo::find($trabajo_id);
     }
+
+    public function storeFoto(){
+
+        $this->validate([
+            'foto' => 'required|image|max:5120',
+        ]);
+
+        $foto = new Foto;
+        $foto->trabajo_id = $this->moTrabajo->id;
+        $foto->orden = $this->moTrabajo->fotos()->max('orden') + 1;
+
+        // upload imagen
+        $path = $this->foto->store('public/trabajos/fotos');
+        Image::make('../storage/app/'.$path)->fit(1080, 720)->save();
+
+        $foto->path = $path;            
+        $foto->save();
+
+        $this->reset(['foto']);
+        $this->moTrabajo->refresh();
+        
+    }
+
+    public function fotoUp($foto_id){
+        if($this->moTrabajo->fotos->count()>1){
+            $foto = Foto::find($foto_id);
+            $fotoPrev = Foto::where('trabajo_id', $this->moTrabajo->id)->where('orden', ($foto->orden-1))->first();
+            $foto->decrement('orden');
+            $fotoPrev->increment('orden');
+            $this->moTrabajo->refresh();            
+        }
+
+    }
+
+    public function fotoDown($foto_id){
+        if($this->moTrabajo->fotos->count()>1){
+            $foto = Foto::find($foto_id);
+            $fotoNext = Foto::where('trabajo_id', $this->moTrabajo->id)->where('orden', ($foto->orden+1))->first();
+            $foto->increment('orden');
+            $fotoNext->decrement('orden');
+            $this->moTrabajo->refresh();
+        }
+    }
+
+    // FIN FOTOS
 
     public function close(){
         $this->reset(['categoria', 'nombre', 'descripcion', 'moTrabajo']);

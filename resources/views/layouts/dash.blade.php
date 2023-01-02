@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dashboard - Vocación de Orientar</title>
+        <title>Dashboard - Todo Reformas Tenerife</title>
 
         <link href="{{ asset('favicon.ico') }}" rel="shortcut icon">
 
