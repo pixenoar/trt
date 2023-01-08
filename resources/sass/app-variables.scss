@@ -5,11 +5,16 @@ $secondary: #3F3F46;
 $light: #FFFFFF;
 $dark: #18181B;
 
+// Bordes
+
+$card-border-color: #DEE2E6;
+
 // Tipografía
 
 $body-color: #3F3F46;
 $font-family-sans-serif: 'Inter', sans-serif;
 $text-muted: #71717A;
+$h5-font-size: 1rem * 1.125;
 
 // Modal
 
@@ -19,6 +24,7 @@ $modal-backdrop-opacity: .8;
 
 $offcanvas-horizontal-width: 600px;
 
+// Carousel
 
 $carousel-indicator-width:           10px;
 $carousel-indicator-height:          10px;

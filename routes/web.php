@@ -7,16 +7,23 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dash\TrabajosComponent;
 use App\Http\Livewire\Dash\CategoriasComponent;
 
-// --------
-
 // FrontEnd
 
-//Route::view('/', 'site.index')->name('site.home');
 Route::get('/', [SiteController::class, 'index'])->name('site.home');
 Route::get('empresa', [SiteController::class, 'empresa'])->name('site.empresa');
-//Route::view('empresa', 'site.empresa')->name('site.empresa');
 Route::redirect('empresa.php', 'empresa');
+Route::get('servicios', [SiteController::class, 'servicios'])->name('site.servicios');
+Route::redirect('servicios.php', 'servicios');
 
+Route::get('servicios/reforma-de-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.reforma-de-casas');
+Route::redirect('reformas-casas.php', 'servicios/reforma-de-casas');
+
+Route::get('ultimos-trabajos', [SiteController::class, 'trabajos'])->name('site.trabajos');
+Route::redirect('ultimostrabajos.php', 'ultimos-trabajos');
+Route::get('garantia', [SiteController::class, 'garantia'])->name('site.garantia');
+Route::redirect('garantia.php', 'garantia');
+Route::get('contacto', [SiteController::class, 'contacto'])->name('site.contacto');
+Route::redirect('contacto.php', 'contacto');
 
 // BackEnd
 
@@ -31,7 +38,14 @@ Route::prefix('dashboard')->group(function(){
 
 });
 
+// Autenticación
+
 require __DIR__.'/auth.php';
+
+
+
+
+
 
 
 Route::get('slink', function () {

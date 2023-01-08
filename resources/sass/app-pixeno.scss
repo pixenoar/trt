@@ -28,7 +28,7 @@
 }
 
 .bg-opacity{
-	background-color: #000;
+	background-color: #18181B;
 	opacity: 0.4;
 	height: 100%;
 	width: 100%;
@@ -42,9 +42,76 @@
 	margin-top: 64px;
 
 	@include media-breakpoint-up(lg) {
-		height: 320px; 
+		height: 400px; 
 	}
 }
+
+.bg-trabajos{
+	background-image: url(../img/bg-trabajos.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 64px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center center; 
+		height: 400px; 
+	}
+}
+
+.bg-garantia{
+	background-image: url(../img/bg-garantia.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 64px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 40%; 
+		height: 400px; 
+	}
+}
+
+.bg-contacto{
+	background-image: url(../img/bg-contacto.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 64px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 40%; 
+		height: 400px; 
+	}
+}
+
+.bg-servicios{
+	background-image: url(../img/bg-servicios.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 64px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 40%; 
+		height: 400px; 
+	}
+}
+
+.bg-redeca{
+	background-image: url(../img/bg-redeca.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 64px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 15%;
+		height: 400px; 
+	}
+}
+
+
 
 // TIPOGRAFÍA
 

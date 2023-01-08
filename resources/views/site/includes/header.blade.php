@@ -1,39 +1,44 @@
-<div class="fixed-top d-flex justify-content-between align-items-center bg-dark shadow px-4 px-lg-5 py-3">
+<div class="fixed-top d-flex justify-content-between align-items-center bg-light shadow-sm border-bottom px-4 px-lg-5 py-3">
     <div>
         <a href="{{ route('site.home') }}">
-            <img src="{{ asset('img/svg/logo.svg') }}" alt="Logo" class="img-fluid w-25">
+            <img src="{{ asset('img/svg/logo-small.svg') }}" alt="Logo" class="img-fluid">
         </a>
     </div>
-    <div class="d-none d-lg-block">
+    <div class="d-none d-xxl-block">
         <ul class="nav">
+            @if(!request()->routeIs('site.home'))
+                <li class="nav-item">
+                    <a href="{{ route('site.home') }}" class="nav-link link-dark">Inicio</a>
+                </li>
+            @endif
             <li class="nav-item">
-                <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-black @else link-light @endif">La Empresa</a>
+                <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-bold @else link-dark @endif">Empresa</a>
             </li>
             <li class="nav-item dropdown-center">
-                <a href="#" class="nav-link @if(request()->routeIs('institucional.*')) link-secondary fw-bold @else link-light @endif dropdown-toggle" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="nav-link @if(request()->routeIs('site.servicios')) link-primary fw-bold @else link-dark @endif dropdown-toggle" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Servicios
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
                 @foreach($categorias as $categoria)
-                    <li><a href="#" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
+                    <li><a href="@if($loop->first) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
                 @endforeach
                 </ul>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link link-light">Trabajos</a>
+                <a href="{{ route('site.trabajos') }}" class="nav-link @if(request()->routeIs('site.trabajos')) link-primary fw-bold @else link-dark @endif">Últimos Trabajos</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link link-light">Garantía</a>
+                <a href="{{ route('site.garantia') }}" class="nav-link @if(request()->routeIs('site.garantia')) link-primary fw-bold @else link-dark @endif">Garantía</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link link-light">Contacto</a>
+                <a href="{{ route('site.contacto') }}" class="nav-link @if(request()->routeIs('site.contacto')) link-primary fw-bold @else link-dark @endif">Contacto</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link link-light btn btn-primary fw-bold ms-3">Presupuesto</a>
+                <a href="#" class="nav-link link-light btn btn-primary ms-2">Presupuesto</a>
             </li>
         </ul>
     </div>
-    <div class="d-lg-none">
-        <a href="javascript:void(0)"><i class="bi bi-list fs-2 text-light" data-bs-target="#offCanvasNavbar" data-bs-toggle="offcanvas" aria-controls="offCanvasNavbar"></i></a>
+    <div class="d-xxl-none">
+        <i class="bi bi-list fs-1" data-bs-target="#offCanvasNavbar" data-bs-toggle="offcanvas" aria-controls="offCanvasNavbar"></i>
     </div>
 </div>

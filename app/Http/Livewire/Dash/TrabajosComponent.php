@@ -111,7 +111,7 @@ class TrabajosComponent extends Component{
 
         // upload imagen
         $path = $this->foto->store('public/trabajos/fotos');
-        Image::make('../storage/app/'.$path)->fit(1080, 720)->save();
+        Image::make('../storage/app/'.$path)->fit(1080, 720)->save(null,50,null);
 
         $foto->path = $path;            
         $foto->save();

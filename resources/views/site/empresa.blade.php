@@ -32,9 +32,9 @@ empresa, reformas, servicios, tenerife
                         <img src="{{ asset('img/nosotros.jpg') }}" class="img-fluid shadow-sm" alt="Todo Reformas Tenerife">                         
                     </div>
                     <div class="col-lg-5 text-center text-lg-start">
-                        <p class="text-muted"><span class="fw-bold">Todo Reformas Tenerife</span>, es una plataforma de trabajo compuesta por una agrupación de empresas expertas en diferentes áreas de la construcción. Cada una de ellas aporta su dilatada experiencia y pone a su disposición sus técnicos especialistas en todos los sectores que su obra necesita.</p>
+                        <p class="text-muted"><span class="fw-bold">Todo Reformas Tenerife</span>, es una plataforma de trabajo compuesta por una agrupación de empresas expertas en diferentes áreas de la construcción. Cada una de ellas, aporta su dilatada experiencia y pone a su disposición sus técnicos especialistas en todos los sectores que su obra necesita.</p>
                         <p class="text-muted">Contamos con personal cualificado y con gran experiencia en el sector de la construcción, decoración, fachadas y trabajos verticales, fontanería, electricidad y artesanía en hierro y acero y todas las áreas necesarias para llevar a buen término su proyecto.</p>
-                        <p class="text-muted">Nos esforzamos en cumplir a tiempo y dentro del presupuesto todos nuestros trabajos, ya sean reformas grandes o pequeñas.</p>
+                        <p class="text-muted">Ofrecemos rapidez, calidad, eficacia y garantía en todos sus trabajos.</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ empresa, reformas, servicios, tenerife
     <section>
         <div class="container-fluid bg-section py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
-                <h3 class="h2 fw-black text-center mb-5"><span class="text-primary">¿PORQUE</span> ELEGIRNOS?</h3>
+                <h3 class="h3 fw-black text-center mb-5"><span class="text-primary">¿PORQUE</span> ELEGIRNOS?</h3>
                 <div class="row g-4 g-lg-5 mt-5">
                     <div class="col-lg-4">
                         <div class="row ">
@@ -53,7 +53,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">TRANSPARENCIA</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Completa transparencia y sin costes ocultos en todos nuestros trabajos.</p>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">EXPERIENCIA</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Somos una empresa formada por profesionales con más de 15 años de experiencia en el sector de las obras y reformas.</p>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">SERVICIOS</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Contamos con una amplia gama de servicios que adaptamos a sus necesidades específicas.</p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">ATENCIÓN</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Todos nuestros presupuestos son personalizados partiendo de una visita al cliente.</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">TIEMPOS</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Nos comprometemos a terminar el trabajo a tiempo y dentro del presupuesto.</p>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">LIMPIEZA</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Una obra no queda terminada para nosotros si no queda todo limpio y recogido, al finalizar la misma.</p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">SEGURIDAD</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Disponemos de Seguro de Responsabilidad Civil para todos nuestros trabajos y cumplimos con un Plan de Riesgos Laborales.</p>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">LEGAL</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Nuestro personal esta dado de alta en la Seguridad Social y contribuimos con nuestros impuestos al mantenimiento del bien social.</p>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ empresa, reformas, servicios, tenerife
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h4 class="fw-bold h5">GARANTÍA</h4>
-                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                                <p>Contamos con personal cualificado y con gran experiencia que garantiza todos nuestros trabajos.</p>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ empresa, reformas, servicios, tenerife
     <section>
         <div class="container-fluid py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
-                <h3 class="h2 fw-black text-center mb-5"><span class="text-primary">PREGUNTAS</span> FRECUENTES</h3>
+                <h3 class="h3 fw-black text-center mb-5"><span class="text-primary">PREGUNTAS</span> FRECUENTES</h3>
                 
                 
                 <div class="accordion" id="faq">

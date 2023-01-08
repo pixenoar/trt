@@ -1,6 +1,6 @@
 <div>
 
-    <div class="row g-4">
+    <div class="row justify-content-center g-4">
         @foreach($trabajos as $trabajo)
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-0 h-100">

@@ -1,11 +1,31 @@
 {
+  "resources/img/bg-home.jpg": {
+    "file": "assets/bg-home.2ab4928c.jpg",
+    "src": "resources/img/bg-home.jpg"
+  },
   "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
     "file": "assets/bootstrap-icons.966620f9.woff2",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
-  "resources/img/bg-home.jpg": {
-    "file": "assets/bg-home.d24b5e1b.jpg",
-    "src": "resources/img/bg-home.jpg"
+  "resources/img/bg-trabajos.jpg": {
+    "file": "assets/bg-trabajos.58a49881.jpg",
+    "src": "resources/img/bg-trabajos.jpg"
+  },
+  "resources/img/bg-garantia.jpg": {
+    "file": "assets/bg-garantia.2efdcc46.jpg",
+    "src": "resources/img/bg-garantia.jpg"
+  },
+  "resources/img/bg-servicios.jpg": {
+    "file": "assets/bg-servicios.e6a68bcc.jpg",
+    "src": "resources/img/bg-servicios.jpg"
+  },
+  "resources/img/bg-contacto.jpg": {
+    "file": "assets/bg-contacto.376fb4d4.jpg",
+    "src": "resources/img/bg-contacto.jpg"
+  },
+  "resources/img/bg-redeca.jpg": {
+    "file": "assets/bg-redeca.cb126848.jpg",
+    "src": "resources/img/bg-redeca.jpg"
   },
   "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
     "file": "assets/bootstrap-icons.c6569d46.woff",
@@ -17,7 +37,7 @@
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app.a29cf612.css",
+    "file": "assets/app.7e62636f.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }
