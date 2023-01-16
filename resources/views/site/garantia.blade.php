@@ -36,42 +36,42 @@ empresa, reformas, servicios, tenerife
                 <h2 class="h4 text-center fw-black my-5">GARANTIZAMOS NUESTROS TRABAJOS EN</h2>
                 <div class="row justify-content-center align-items-center g-3">
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Equipos de calefacción/AA, fontaneria y accesorios
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Instalación de equipos y accesorios eléctricos
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Electrodomésticos (suministrado e instalado por nosotros)
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Saneamientos preventivos
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Instalación de redes de protección
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Impermeabilización de cubiertas y fachadas
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Pinturas exteriores e interiores
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="alert alert-secondary m-0" role="alert">
+                        <div class="alert alert-info m-0" role="alert">
                             <i class="bi bi-check-circle me-1"></i> Ejecuciones de obra
                         </div>
                     </div>

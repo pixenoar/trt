@@ -37,7 +37,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="form-floating">
-                    <textarea class="form-control @error('mensaje') is-invalid @enderror" wire:model.defer="mensaje" id="mensaje" placeholder="Mensaje" style="height: 14rem"></textarea>
+                    <textarea class="form-control @error('mensaje') is-invalid @enderror" wire:model.defer="mensaje" id="mensaje" placeholder="Mensaje" style="height: 16rem"></textarea>
                     <label for="mensaje">Mensaje</label>
                     @error('mensaje')
                         <span class="invalid-feedback">
@@ -52,7 +52,9 @@
                         ENVIAR
                     </div>                        
                     <div wire:loading wire:target="enviar">
-                        ENVIANDO...
+                        <div class="spinner-border spinner-border-sm" role="status">
+                            <span class="visually-hidden">Enviando...</span>
+                        </div>
                     </div>
                 </button>
             </div>

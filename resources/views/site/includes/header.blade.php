@@ -1,10 +1,10 @@
-<div class="fixed-top d-flex justify-content-between align-items-center bg-light shadow-sm border-bottom px-4 px-lg-5 py-3">
+<div class="fixed-top d-flex justify-content-between align-items-center bg-light shadow-sm border-bottom px-4 px-lg-5 py-2 py-lg-3">
     <div>
         <a href="{{ route('site.home') }}">
             <img src="{{ asset('img/svg/logo-small.svg') }}" alt="Logo" class="img-fluid">
         </a>
     </div>
-    <div class="d-none d-xxl-block">
+    <div class="d-none d-lg-block">
         <ul class="nav">
             @if(!request()->routeIs('site.home'))
                 <li class="nav-item">
@@ -19,13 +19,13 @@
                     Servicios
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
-                @foreach($categorias as $categoria)
-                    <li><a href="@if($loop->first) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
+                @foreach($categorias->take(10) as $categoria)
+                    <li><a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
                 @endforeach
                 </ul>
             </li>
             <li class="nav-item">
-                <a href="{{ route('site.trabajos') }}" class="nav-link @if(request()->routeIs('site.trabajos')) link-primary fw-bold @else link-dark @endif">Últimos Trabajos</a>
+                <a href="{{ route('site.trabajos') }}" class="nav-link @if(request()->routeIs('site.trabajos')) link-primary fw-bold @else link-dark @endif">Trabajos</a>
             </li>
             <li class="nav-item">
                 <a href="{{ route('site.garantia') }}" class="nav-link @if(request()->routeIs('site.garantia')) link-primary fw-bold @else link-dark @endif">Garantía</a>
@@ -34,11 +34,11 @@
                 <a href="{{ route('site.contacto') }}" class="nav-link @if(request()->routeIs('site.contacto')) link-primary fw-bold @else link-dark @endif">Contacto</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link link-light btn btn-primary ms-2">Presupuesto</a>
+                <a href="{{ route('site.contacto') }}" class="nav-link link-light btn btn-primary ms-3">Presupuesto</a>
             </li>
         </ul>
     </div>
-    <div class="d-xxl-none">
+    <div class="d-lg-none">
         <i class="bi bi-list fs-1" data-bs-target="#offCanvasNavbar" data-bs-toggle="offcanvas" aria-controls="offCanvasNavbar"></i>
     </div>
 </div>

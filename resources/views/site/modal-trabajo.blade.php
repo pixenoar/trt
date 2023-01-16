@@ -1,5 +1,5 @@
 <div wire:ignore.self class="modal fade" id="modalTrabajo" tabindex="-1" aria-labelledby="modalTrabajoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+    <div class="modal-dialog modal-lg ">
         <div class="modal-content border-0 rounded-0">
 
             <div class="modal-header border-0 justify-content-end">

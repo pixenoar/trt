@@ -31,12 +31,12 @@ reformas, servicios, tenerife, tiendas
                 <div class="row g-4">
                     @foreach($categorias as $categoria)
                         <div class="col-lg-4">
-                            <a href="@if($loop->first) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif">
+                            <a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif">
                                 <div class="position-relative">
                                     <img src="{{ asset($categoria->foto) }}" alt="{{ $categoria->nombre }}" class="img-fluid shadow-sm">
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x h-50 w-100 bg-grad-black"></div>
                                     <div class="position-absolute bottom-0 start-0 px-4 py-3">
-                                        <h3 class="h4 fw-bold text-white mb-0">{{ Str::upper($categoria->nombre) }}</h3>
+                                        <h2 class="h4 fw-bold text-white mb-0">{{ Str::upper($categoria->nombre) }}</h2>
                                         <p class="mb-0 text-white small">{{ $categoria->descripcion }}</p>
                                     </div> 
                                 </div>

@@ -15,8 +15,8 @@ Route::redirect('empresa.php', 'empresa');
 Route::get('servicios', [SiteController::class, 'servicios'])->name('site.servicios');
 Route::redirect('servicios.php', 'servicios');
 
-Route::get('servicios/reforma-de-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.reforma-de-casas');
-Route::redirect('reformas-casas.php', 'servicios/reforma-de-casas');
+Route::get('reformas-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.reforma-de-casas');
+Route::redirect('reformas-casas.php', 'reformas-casas');
 
 Route::get('ultimos-trabajos', [SiteController::class, 'trabajos'])->name('site.trabajos');
 Route::redirect('ultimostrabajos.php', 'ultimos-trabajos');

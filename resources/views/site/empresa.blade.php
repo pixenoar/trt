@@ -44,7 +44,7 @@ empresa, reformas, servicios, tenerife
     <section>
         <div class="container-fluid bg-section py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
-                <h3 class="h3 fw-black text-center mb-5"><span class="text-primary">¿PORQUE</span> ELEGIRNOS?</h3>
+                <h2 class="h3 fw-black text-center mb-5"><span class="text-primary">¿PORQUE</span> ELEGIRNOS?</h2>
                 <div class="row g-4 g-lg-5 mt-5">
                     <div class="col-lg-4">
                         <div class="row ">
@@ -52,7 +52,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-hand-thumbs-up text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">TRANSPARENCIA</h4>
+                                <h3 class="fw-bold h5">TRANSPARENCIA</h3>
                                 <p>Completa transparencia y sin costes ocultos en todos nuestros trabajos.</p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-award text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">EXPERIENCIA</h4>
+                                <h3 class="fw-bold h5">EXPERIENCIA</h3>
                                 <p>Somos una empresa formada por profesionales con más de 15 años de experiencia en el sector de las obras y reformas.</p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-tools text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">SERVICIOS</h4>
+                                <h3 class="fw-bold h5">SERVICIOS</h3>
                                 <p>Contamos con una amplia gama de servicios que adaptamos a sus necesidades específicas.</p>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-info-circle text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">ATENCIÓN</h4>
+                                <h3 class="fw-bold h5">ATENCIÓN</h3>
                                 <p>Todos nuestros presupuestos son personalizados partiendo de una visita al cliente.</p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-clock text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">TIEMPOS</h4>
+                                <h3 class="fw-bold h5">TIEMPOS</h3>
                                 <p>Nos comprometemos a terminar el trabajo a tiempo y dentro del presupuesto.</p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-droplet text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">LIMPIEZA</h4>
+                                <h3 class="fw-bold h5">LIMPIEZA</h3>
                                 <p>Una obra no queda terminada para nosotros si no queda todo limpio y recogido, al finalizar la misma.</p>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-shield-check text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">SEGURIDAD</h4>
+                                <h3 class="fw-bold h5">SEGURIDAD</h3>
                                 <p>Disponemos de Seguro de Responsabilidad Civil para todos nuestros trabajos y cumplimos con un Plan de Riesgos Laborales.</p>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-file-text text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">LEGAL</h4>
+                                <h3 class="fw-bold h5">LEGAL</h3>
                                 <p>Nuestro personal esta dado de alta en la Seguridad Social y contribuimos con nuestros impuestos al mantenimiento del bien social.</p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ empresa, reformas, servicios, tenerife
                                 <i class="bi bi-patch-check text-primary display-4"></i>
                             </div>
                             <div class="col-10 col-lg-9">
-                                <h4 class="fw-bold h5">GARANTÍA</h4>
+                                <h3 class="fw-bold h5">GARANTÍA</h3>
                                 <p>Contamos con personal cualificado y con gran experiencia que garantiza todos nuestros trabajos.</p>
                             </div>
                         </div>

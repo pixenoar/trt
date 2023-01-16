@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-end w-75 bg-dark px-2 py-3" tabindex="-1" id="offCanvasNavbar" aria-labelledby="offCanvasNavbarLabel">
+<div class="offcanvas offcanvas-end w-75 bg-dark shadow-lg px-2 py-3" tabindex="-1" id="offCanvasNavbar" aria-labelledby="offCanvasNavbarLabel">
     <div class="offcanvas-body">
         <a href="{{ route('site.home') }}">
             <img src="{{ asset('img/svg/logo.svg') }}" class="img-fluid d-block mx-auto w-75" alt="Logo">
@@ -18,22 +18,25 @@
                     <ul class="nav flex-column small ms-3 my-2">
                     @foreach($categorias as $categoria)
                         <li class="nav-item">
-                            <a href="@if($loop->first) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="nav-link link-light">{{ $categoria->nombre }}</a>
+                            <a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="nav-link link-light">{{ $categoria->nombre }}</a>
                         </li>
                     @endforeach
                     </ul>
                 </div>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
-                <a href="{{ route('site.trabajos') }}" class="nav-link @if(request()->routeIs('site.trabajos')) link-primary fw-bold @else link-light @endif ps-1">Trabajos</a>
+                <a href="{{ route('site.trabajos') }}" class="nav-link @if(request()->routeIs('site.trabajos')) link-primary fw-bold @else link-light @endif ps-1">Últimos Trabajos</a>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
                 <a href="{{ route('site.garantia') }}" class="nav-link @if(request()->routeIs('site.garantia')) link-primary fw-bold @else link-light @endif ps-1">Garantía</a>
             </li>
-            <li class="nav-item py-1">
+            <li class="nav-item border-bottom border-secondary py-1">
                 <a href="{{ route('site.contacto') }}" class="nav-link @if(request()->routeIs('site.contacto')) link-primary fw-bold @else link-light @endif ps-1">Contacto</a>
             </li>
+            <li class="nav-item py-1">
+                <a href="#" class="nav-link link-light ps-1">Política de Privacidad</a>
+            </li>
         </ul>
-        <a href="#" class="btn btn-primary btn-sm fw-bold text-white w-100" role="button">SOLICITAR PRESUPUESTO</a>
+        <a href="{{ route('site.contacto') }}" class="btn btn-primary btn-sm fw-bold text-white w-100" role="button">SOLICITAR PRESUPUESTO</a>
     </div>
 </div>

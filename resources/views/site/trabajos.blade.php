@@ -1,15 +1,15 @@
 @extends('layouts.site')
 
 @section('title')
-Garantía - Todo Reformas Tenerife
+Últimos Trabajos - Todo Reformas Tenerife
 @endsection
 
 @section('description')
-Ofrecemos garantia en Todos nuestros trabajos, ya sean grandes o pequeños.
+Estos son algunos de los ultimos trabajos realizados por Todo Reformas en Tenerife.
 @endsection
 
 @section('keywords')
-empresa, reformas, servicios, tenerife
+empresa, reformas, trabajos, tenerife
 @endsection
 
 @section('contenido')

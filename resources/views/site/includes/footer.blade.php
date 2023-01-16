@@ -4,7 +4,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center text-light">
-                        <h4 class="h2 fw-bold">¿Necesitas una reforma?</h4>
+                        <h2 class="fw-bold">¿Necesitas una reforma?</h2>
                         <p class="fw-light fs-5 my-3">Solicitanos un presupuesto sin compromiso</p>
                         <a href="{{ route('site.contacto') }}" class="btn btn-light btn-sm fw-bold mt-4" role="button">CONTÁCTANOS</a>
                     </div>
@@ -22,19 +22,19 @@
                     <h5 class="h6 text-white fw-bold mb-3">TODO REFORMAS TENERIFE</h5>
                     <ul class="nav flex-column small">
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Empresa</a>
+                            <a href="{{ route('site.empresa') }}" class="nav-link link-light px-0 py-1">Empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Nuestros Servicios</a>
+                            <a href="{{ route('site.servicios') }}" class="nav-link link-light px-0 py-1">Nuestros Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Últimos Trabajos</a>
+                            <a href="{{ route('site.trabajos') }}" class="nav-link link-light px-0 py-1">Últimos Trabajos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Garantía</a>
+                            <a href="{{ route('site.garantia') }}" class="nav-link link-light px-0 py-1">Garantía</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Contacto</a>
+                            <a href="{{ route('site.contacto') }}" class="nav-link link-light px-0 py-1">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link link-light px-0 py-1">Política de Privacidad</a>
@@ -44,9 +44,9 @@
                 <div class="col-lg-4">
                     <h5 class="h6 text-white fw-bold mb-3">SERVICIOS</h5>
                     <ul class="nav flex-column">
-                    @foreach($categorias as $categoria)
+                    @foreach($categorias->take(10) as $categoria)
                         <li class="nav-item small">
-                            <a href="@if($loop->first) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="nav-link link-light px-0 py-1">{{ $categoria->nombre }}</a>
+                            <a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="nav-link link-light px-0 py-1">{{ $categoria->nombre }}</a>
                         </li>
                     @endforeach
                     </ul>
