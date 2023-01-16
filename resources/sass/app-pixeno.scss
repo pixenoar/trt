@@ -111,6 +111,33 @@
 	}
 }
 
+.bg-ofylo{
+	background-image: url(../img/bg-ofylo.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 60%;
+		height: 400px; 
+	}
+}
+
+.bg-facha{
+	background-image: url(../img/bg-facha.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 50%;
+		height: 400px; 
+	}
+}
+
+
 
 
 // TIPOGRAFÍA

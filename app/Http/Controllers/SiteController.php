@@ -31,6 +31,25 @@ class SiteController extends Controller{
         return view('site.servicios.redeca', compact('categorias', 'servicio'));
     }
 
+    public function serviciosOfyLo(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(3);
+        return view('site.servicios.ofylo', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosFacha(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(3);
+        return view('site.servicios.facha', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosElec(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(3);
+        return view('site.servicios.elec', compact('categorias', 'servicio'));
+    }
+
+
     // Fin de Servicios
 
     public function trabajos(){

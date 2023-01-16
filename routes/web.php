@@ -17,6 +17,12 @@ Route::redirect('servicios.php', 'servicios');
 
 Route::get('reformas-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.reforma-de-casas');
 Route::redirect('reformas-casas.php', 'reformas-casas');
+Route::get('oficinas-locales', [SiteController::class, 'serviciosOfyLo'])->name('site.servicios.oficinas-y-locales');
+Route::redirect('oficinas-locales.php', 'oficinas-locales');
+Route::get('fachadas', [SiteController::class, 'serviciosFacha'])->name('site.servicios.fachadas');
+Route::redirect('fachadas.php', 'fachadas');
+Route::get('instalaciones-electricas', [SiteController::class, 'serviciosElec'])->name('site.servicios.electricidad');
+Route::redirect('instalaciones-electricas.php', 'instalaciones-electricas');
 
 Route::get('ultimos-trabajos', [SiteController::class, 'trabajos'])->name('site.trabajos');
 Route::redirect('ultimostrabajos.php', 'ultimos-trabajos');
