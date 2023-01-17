@@ -20,7 +20,7 @@
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
                 @foreach($categorias->take(10) as $categoria)
-                    <li><a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
+                    <li><a href="{{ route($categoria->ruta) }}" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
                 @endforeach
                 </ul>
             </li>

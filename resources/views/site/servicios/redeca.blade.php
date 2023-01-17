@@ -53,32 +53,32 @@ reformas, casas, pisos, tenerife
                 <div class="pt-4 pt-lg-5">
                     <h3 class="h4 text-center fw-black my-5">NUESTROS SERVICIOS</h3>
                     <div class="row justify-content-center align-items-center g-3">
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Proyectos y licencias
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Electricidad y boletín oficial 
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Fontanería con boletín oficial
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Carpintería
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Pintura
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Alicatados
                             </div>
@@ -90,15 +90,9 @@ reformas, casas, pisos, tenerife
         </div>
     </section>
 
-    <section>
-        <div class="container-fluid bg-section py-4 py-lg-5">
-            <div class="container py-4 py-lg-5">
-                <h3 class="h4 fw-black text-center mb-5">ÚLTIMOS TRABAJOS EN <span class="text-primary">{{ Str::upper($servicio->nombre) }}</span></h3>
-                @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
-            </div>
-        </div>
-    </section>
+    <!-- últimos trabajos -->
 
+    @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
 
     <!-- footer -->
 

@@ -150,6 +150,83 @@
 	}
 }
 
+.bg-pintu{
+	background-image: url(../img/bg-pintura.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 40%;
+		height: 400px; 
+	}
+}
+
+.bg-pladur{
+	background-image: url(../img/bg-pladur.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 50%;
+		height: 400px; 
+	}
+}
+
+.bg-acero{
+	background-image: url(../img/bg-acero.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 50%;
+		height: 400px; 
+	}
+}
+
+.bg-certi{
+	background-image: url(../img/bg-certi.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 40%;
+		height: 400px; 
+	}
+}
+
+.bg-obra{
+	background-image: url(../img/bg-obra.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 30%;
+		height: 400px; 
+	}
+}
+
+.bg-madera{
+	background-image: url(../img/bg-madera.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 30%;
+		height: 400px; 
+	}
+}
 
 
 

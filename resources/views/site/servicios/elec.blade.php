@@ -49,26 +49,31 @@ proyectos, electricos, electricidad, tenerife
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Sellado de Boletines de BT
+                                <br><span class="small">Lorem ipsum es simplemente el texto de relleno.</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Proyectos de licencia de actividades
+                                <br><span class="small">Para la apertura de nuevos negocios, licencias de apertura, medio ambientales, etc.</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Proyectos de licencia de obras 
+                                <i class="bi bi-check-circle me-1"></i> Proyectos de licencia de obras
+                                <br><span class="small">Para la realización de obras industriales, comerciales, residenciales, etc.</span> 
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Proyectos de instalaciones
+                                <br><span class="small">Ofrecemos un servicio integral, desde la realización del proyecto hasta su legalización.</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Informes, valoraciones y tasaciones
+                                <br><span class="small">Realizamos todo tipo de informes técnicos, valoraciones y tasaciones.</span>
                             </div>
                         </div>
                     </div>                    
@@ -78,15 +83,9 @@ proyectos, electricos, electricidad, tenerife
         </div>
     </section>
 
-    <section>
-        <div class="container-fluid bg-section py-4 py-lg-5">
-            <div class="container py-4 py-lg-5">
-                <h3 class="h4 fw-black text-center mb-5">ÚLTIMOS TRABAJOS EN <span class="text-primary">{{ Str::upper($servicio->nombre) }}</span></h3>
-                @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
-            </div>
-        </div>
-    </section>
+    <!-- últimos trabajos -->
 
+    @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
 
     <!-- footer -->
 

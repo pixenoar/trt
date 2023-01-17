@@ -15,14 +15,39 @@ Route::redirect('empresa.php', 'empresa');
 Route::get('servicios', [SiteController::class, 'servicios'])->name('site.servicios');
 Route::redirect('servicios.php', 'servicios');
 
-Route::get('reformas-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.reforma-de-casas');
+
+
+
+Route::get('reformas-casas', [SiteController::class, 'serviciosReDeCa'])->name('site.servicios.casas');
 Route::redirect('reformas-casas.php', 'reformas-casas');
-Route::get('oficinas-locales', [SiteController::class, 'serviciosOfyLo'])->name('site.servicios.oficinas-y-locales');
+
+Route::get('oficinas-locales', [SiteController::class, 'serviciosOfyLo'])->name('site.servicios.oficinas');
 Route::redirect('oficinas-locales.php', 'oficinas-locales');
+
 Route::get('fachadas', [SiteController::class, 'serviciosFacha'])->name('site.servicios.fachadas');
 Route::redirect('fachadas.php', 'fachadas');
+
 Route::get('instalaciones-electricas', [SiteController::class, 'serviciosElec'])->name('site.servicios.electricidad');
 Route::redirect('instalaciones-electricas.php', 'instalaciones-electricas');
+
+Route::get('hogar', [SiteController::class, 'serviciosPintu'])->name('site.servicios.pintura');
+Route::redirect('hogar.php', 'hogar');
+
+Route::get('forjado-acero-inox', [SiteController::class, 'serviciosAcero'])->name('site.servicios.aceros');
+Route::redirect('forjado-acero-inox.php', 'forjado-acero-inox');
+
+Route::get('certificado-energetico-tenerife', [SiteController::class, 'serviciosCerti'])->name('site.servicios.certificado');
+Route::redirect('certificado-energetico-tenerife.php', 'certificado-energetico-tenerife');
+
+Route::get('pladur', [SiteController::class, 'serviciosPladur'])->name('site.servicios.pladur');
+Route::redirect('pladur.php', 'pladur');
+
+Route::get('obra-nueva', [SiteController::class, 'serviciosObra'])->name('site.servicios.obra');
+Route::redirect('obra-nueva.php', 'obra-nueva');
+
+Route::get('casas-madera', [SiteController::class, 'serviciosMadera'])->name('site.servicios.madera');
+Route::redirect('casas-madera.php', 'casas-madera');
+
 
 Route::get('ultimos-trabajos', [SiteController::class, 'trabajos'])->name('site.trabajos');
 Route::redirect('ultimostrabajos.php', 'ultimos-trabajos');

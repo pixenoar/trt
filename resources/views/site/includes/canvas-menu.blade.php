@@ -18,7 +18,7 @@
                     <ul class="nav flex-column small ms-3 my-2">
                     @foreach($categorias as $categoria)
                         <li class="nav-item">
-                            <a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif" class="nav-link link-light">{{ $categoria->nombre }}</a>
+                            <a href="{{ route($categoria->ruta) }}" class="nav-link link-light">{{ $categoria->nombre }}</a>
                         </li>
                     @endforeach
                     </ul>

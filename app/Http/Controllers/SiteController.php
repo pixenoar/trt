@@ -49,6 +49,43 @@ class SiteController extends Controller{
         return view('site.servicios.elec', compact('categorias', 'servicio'));
     }
 
+    public function serviciosPintu(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(5);
+        return view('site.servicios.pintu', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosPladur(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(10);
+        return view('site.servicios.pladur', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosAcero(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(7);
+        return view('site.servicios.acero', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosCerti(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(8);
+        return view('site.servicios.certi', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosObra(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(12);
+        return view('site.servicios.obra', compact('categorias', 'servicio'));
+    }
+
+    public function serviciosMadera(){
+        $categorias = Categoria::orderBy('orden')->get();
+        $servicio = Categoria::find(13);
+        return view('site.servicios.madera', compact('categorias', 'servicio'));
+    }
+
+
 
     // Fin de Servicios
 

@@ -102,14 +102,9 @@ reformas, tenerife, pintura, fachadas, reparación, restauración, rehabilitaci�
         </div>
     </section>
 
-    <section>
-        <div class="container-fluid bg-section py-4 py-lg-5">
-            <div class="container py-4 py-lg-5">
-                <h3 class="h4 fw-black text-center mb-5">ÚLTIMOS TRABAJOS EN <span class="text-primary">{{ Str::upper($servicio->nombre) }}</span></h3>
-                @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
-            </div>
-        </div>
-    </section>
+    <!-- últimos trabajos -->
+
+    @livewire('site.trabajos-relacionados', ['moCategoria' => $servicio])
 
 
     <!-- footer -->

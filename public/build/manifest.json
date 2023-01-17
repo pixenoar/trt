@@ -1,11 +1,11 @@
 {
-  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
-    "file": "assets/bootstrap-icons.966620f9.woff2",
-    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
-  },
   "resources/img/bg-home.jpg": {
     "file": "assets/bg-home.2ab4928c.jpg",
     "src": "resources/img/bg-home.jpg"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons.966620f9.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
   "resources/img/bg-trabajos.jpg": {
     "file": "assets/bg-trabajos.58a49881.jpg",
@@ -39,6 +39,30 @@
     "file": "assets/bg-elec.843e6680.jpg",
     "src": "resources/img/bg-elec.jpg"
   },
+  "resources/img/bg-pintura.jpg": {
+    "file": "assets/bg-pintura.50c15d70.jpg",
+    "src": "resources/img/bg-pintura.jpg"
+  },
+  "resources/img/bg-pladur.jpg": {
+    "file": "assets/bg-pladur.87ac3498.jpg",
+    "src": "resources/img/bg-pladur.jpg"
+  },
+  "resources/img/bg-acero.jpg": {
+    "file": "assets/bg-acero.15e02e20.jpg",
+    "src": "resources/img/bg-acero.jpg"
+  },
+  "resources/img/bg-certi.jpg": {
+    "file": "assets/bg-certi.4c8e8670.jpg",
+    "src": "resources/img/bg-certi.jpg"
+  },
+  "resources/img/bg-obra.jpg": {
+    "file": "assets/bg-obra.82ba04c9.jpg",
+    "src": "resources/img/bg-obra.jpg"
+  },
+  "resources/img/bg-madera.jpg": {
+    "file": "assets/bg-madera.46cbcf0e.jpg",
+    "src": "resources/img/bg-madera.jpg"
+  },
   "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
     "file": "assets/bootstrap-icons.c6569d46.woff",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
@@ -49,7 +73,7 @@
     "isEntry": true
   },
   "resources/sass/app.scss": {
-    "file": "assets/app.b6bfa071.css",
+    "file": "assets/app.90fc701a.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }

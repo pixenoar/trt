@@ -61,7 +61,7 @@ reformas, tenerife, empresa, rehabilitacion, locales, baños, cocinas, fachadas
                 <div class="row g-4">
                     @foreach($categorias->take(6) as $categoria)
                         <div class="col-lg-4">
-                            <a href="@if($loop->iteration == 2) {{ route('site.servicios.'.Str::slug($categoria->nombre, '-')) }} @else # @endif">
+                            <a href="{{ route($categoria->ruta) }}">
                                 <div class="position-relative">
                                     <img src="{{ asset($categoria->foto) }}" alt="{{ $categoria->nombre }}" class="img-fluid shadow-sm">
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x h-50 w-100 bg-grad-black"></div>
