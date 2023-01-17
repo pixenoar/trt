@@ -30,20 +30,25 @@ reformas, tenerife, pintura, fachadas, reparación, restauración, rehabilitaci�
     <section>
         <div class="container-fluid py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
+
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/redeca/redeca-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
-                        <p class="text-muted text-center text-lg-start fs-4">Trabajos verticales sin andamios en Tenerife.</p>
+                        <p class="text- text-center text-lg-start fs-4">Trabajos verticales sin andamios en Tenerife</p>
                         <p class="text-muted text-center text-lg-start">Hemos adoptado técnicas procedentes de la escalada y utilizando sistemas de suspensión ligero y material de seguridad avanzado, podemos ofrecer a nuestros clientes grandes ventajas con respecto a los tradicionales andamios y grúas; como pueden ser la rapidez, la limpieza, la reducción económica y molestias que ocasionan las obras.</p>
+                        <p class="text-muted text-center text-lg-start">Nuestras soluciones con o sin andamio están destinadas a particulares, comunidades de propietarios, administradores de fincas y empresas en general, que deseen restaurar su fachada.</p>
+                        <p class="text-muted text-center text-lg-start">Nos encargamos de la rehabilitación integral de edificios y mantenimiento, de modo que ofrecemos solvencia, rigor y profesionalidad con operarios cualificados en la restauración.</p>
                     </div>
-                    <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/redeca/redeca-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
-                    </div>                    
-                    <div class="col-lg-5">
-                        <p class="text-muted text-center text-lg-start">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
-                        <p class="text-muted text-center text-lg-start">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+                    <div class="col-lg-5 order-2 order-lg-1">
+                        <p class="text- text-center text-lg-start fs-4">Facilitamos cualquier servicio en altura para lugares de dificil acceso</p>
+                        <p class="text-muted text-center text-lg-start">Así, proporcionamos restauración y mantenimiento de monumentos, instalaciones y limpiezas en lugares de difícil acceso así como mantenimiento industrial de estructuras verticales.</p>
+                        <p class="text-muted text-center text-lg-start">Disponemos de las licencias legales vigentes y nos hallamos inscritos en cuantos registros son necesarios para el desarrollo de nuestra actividad.</p>
+                        <p class="text-muted text-center text-lg-start">Nuestros Técnicos han sido certificados por la IRATA, (Industrial Rope Access Trade Association) Organismo de referencia internacional para la Certificación de trabajadores que realizan trabajos en altura <a href="https://irata.org" target="_blank" class="text-decoration-none">www.irata.org</a></p>
+                    </div>    
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>                    
                 </div>
 

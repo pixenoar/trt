@@ -137,6 +137,19 @@
 	}
 }
 
+.bg-elec{
+	background-image: url(../img/bg-elec.jpg);
+	background-position: center center; 
+	background-size: cover;
+	height: 240px;
+	margin-top: 60px;
+
+	@include media-breakpoint-up(lg){
+		background-position: center 30%;
+		height: 400px; 
+	}
+}
+
 
 
 

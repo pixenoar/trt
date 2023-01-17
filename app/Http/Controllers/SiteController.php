@@ -39,13 +39,13 @@ class SiteController extends Controller{
 
     public function serviciosFacha(){
         $categorias = Categoria::orderBy('orden')->get();
-        $servicio = Categoria::find(3);
+        $servicio = Categoria::find(2);
         return view('site.servicios.facha', compact('categorias', 'servicio'));
     }
 
     public function serviciosElec(){
         $categorias = Categoria::orderBy('orden')->get();
-        $servicio = Categoria::find(3);
+        $servicio = Categoria::find(1);
         return view('site.servicios.elec', compact('categorias', 'servicio'));
     }
 

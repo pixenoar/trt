@@ -16,7 +16,7 @@ reformas, tenerife, tiendas, restaurantes, fachadas, rehabilitacion, locales, in
 
     <section>
         @include('site.includes.header')
-        <div class="bg-redeca position-relative">
+        <div class="bg-ofylo position-relative">
             <div class="bg-opacity position-absolute top-0 start-0"></div>
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="text-center text-white">
@@ -30,20 +30,16 @@ reformas, tenerife, tiendas, restaurantes, fachadas, rehabilitacion, locales, in
     <section>
         <div class="container-fluid py-4 py-lg-5">
             <div class="container py-4 py-lg-5">
+
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/redeca/redeca-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
-                        <p class="text-muted text-center text-lg-start fs-4">Con la máxima garantía, rapidez y calidad.</p>
+                        <p class="text- text-center text-lg-start fs-4">Con la máxima garantía, rapidez y calidad</p>
                         <p class="text-muted text-center text-lg-start">Realizamos reformas de locales comerciales en Tenerife, tanto parciales como integrales, ya sean tiendas, oficinas, restaurantes y mucho más.</p>
-                    </div>
-                    <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/redeca/redeca-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
-                    </div>                    
-                    <div class="col-lg-5">
                         <p class="text-muted text-center text-lg-start">Si ha pensado en abrir nueva oficina, comercio, rstaurante o en realizar en ellas un reforma, no dude en contactar con nosotros. Nuestra empresa posee dilatada expericia en el diseño y reforma negocios.</p>
-                        <p class="text-muted text-center text-lg-start">Los espacios de negocio, empiezan con un diseño eficaz, que integre confort y estética; siendo ésta, nuestra mejor carta de presentación. Entendemos las necesidades de nuestros clientes, por ello, garantizamos la mejor atención y la asesoría continua</p>
+                        <p class="text-muted text-center text-lg-start">Los espacios de negocio, empiezan con un diseño eficaz, que integre confort y estética; siendo ésta, nuestra mejor carta de presentación. Entendemos las necesidades de nuestros clientes, por ello, garantizamos la mejor atención y la asesoría continua.</p>
                     </div>                    
                 </div>
 

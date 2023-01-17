@@ -16,7 +16,7 @@ proyectos, electricos, electricidad, tenerife
 
     <section>
         @include('site.includes.header')
-        <div class="bg-facha position-relative">
+        <div class="bg-elec position-relative">
             <div class="bg-opacity position-absolute top-0 start-0"></div>
             <div class="position-absolute top-50 start-50 translate-middle">
                 <div class="text-center text-white">
@@ -34,63 +34,41 @@ proyectos, electricos, electricidad, tenerife
 
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/redeca/redeca-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
-                        <p class="text- text-center text-lg-start fs-4">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                        <p class="text-muted fw-light text-center text-lg-start">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-                    </div>
-                    <div class="col-lg-5 order-2 order-lg-1">
-                        <p class="text- text-center text-lg-start fs-4">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                        <p class="text-muted fw-light text-center text-lg-start">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-                    </div>    
-                    <div class="col-lg-5 order-1 order-lg-2">
-                        <img src="{{ asset('img/servicios/redeca/redeca-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
-                    </div>                    
-                
+                        <p class="text- text-center text-lg-start fs-4">Disponemos de un servicio de Ingeniería de Instalaciones con gran experiencia</p>
+                        <p class="text-muted text-center text-lg-start">En proyectos eléctricos ofrecemos un servicio Integral de instalaciones hasta su finalización y legalización ante el departamento de Industria o la Administración correspondiente, encargándonos de todo el proceso, ya sea la realización del proyecto, como el control de la buena ejecución de la instalación, asesoramiento al instalador profesional, control, dirección, y acompañamiento en las inspecciones correspondientes y necesarias, así como la orientación de las mejores soluciones para el buen funcionamiento y el ahorro energético.</p>
+                        <p class="text-muted text-center text-lg-start">Ofrecemos un servicio con total seriedad, profesionalidad y puntualidad, garantizando el cumplimiento de toda reglamentación siempre intentando ofrecer el mejor precio.</p>
+                    </div>                  
                 </div>
 
                 <div class="pt-4 pt-lg-5">
-                    <h3 class="h4 text-center fw-black my-5">RESUMEN DE NUESTROS TRABAJOS VERTICALES</h3>
+                    <h3 class="h4 text-center fw-black my-5">REALIZAMOS</h3>
                     <div class="row justify-content-center align-items-center g-3">
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Protección de fachadas y patrimonio
+                                <i class="bi bi-check-circle me-1"></i> Sellado de Boletines de BT
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Pintura en general 
+                                <i class="bi bi-check-circle me-1"></i> Proyectos de licencia de actividades
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Rehabilitación de patios y fachadas con difícil acceso
+                                <i class="bi bi-check-circle me-1"></i> Proyectos de licencia de obras 
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Saneamientos preventivos
+                                <i class="bi bi-check-circle me-1"></i> Proyectos de instalaciones
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Instalación de redes de protección
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Impermeabilización de cubiertas y fachadas
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Fijación y anclaje de baldosas
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="alert alert-primary m-0" role="alert">
-                                <i class="bi bi-check-circle me-1"></i> Instalación de todo tipo de elementos publicitarios
+                                <i class="bi bi-check-circle me-1"></i> Informes, valoraciones y tasaciones
                             </div>
                         </div>
                     </div>                    
