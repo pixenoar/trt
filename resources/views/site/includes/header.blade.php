@@ -15,12 +15,12 @@
                 <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-bold @else link-dark @endif">Empresa</a>
             </li>
             <li class="nav-item dropdown-center">
-                <a href="#" class="nav-link @if(request()->routeIs('site.servicios')) link-primary fw-bold @else link-dark @endif dropdown-toggle" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="nav-link @if(request()->routeIs('site.servicios') || request()->routeIs('site.servicios.*')) link-primary fw-bold @else link-dark @endif dropdown-toggle" id="dropdown-institucional" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Servicios
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
                 @foreach($categorias->take(10) as $categoria)
-                    <li><a href="{{ route($categoria->ruta) }}" class="dropdown-item small">{{ $categoria->nombre }}</a></li>
+                    <li><a href="{{ route($categoria->ruta) }}" class="dropdown-item small @if(request()->routeIs($categoria->ruta)) active @endif">{{ $categoria->nombre }}</a></li>
                 @endforeach
                 </ul>
             </li>

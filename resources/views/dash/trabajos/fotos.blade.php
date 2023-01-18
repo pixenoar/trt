@@ -49,7 +49,7 @@
                                         <td>
                                             <button type="button" wire:click="fotoUp({{ $foto->id }})"  class="btn btn-dark btn-sm @if($loop->first) disabled @endif"><i class="bi bi-caret-up-fill"></i></button>
                                             <button type="button" wire:click="fotoDown({{ $foto->id }})"  class="btn btn-dark btn-sm @if($loop->last) disabled @endif"><i class="bi bi-caret-down-fill"></i></button>
-                                            <button type="button" wire:click="delete({{ $foto->id }})"  class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDelete"><i class="bi bi-trash"></i></button>
+                                            <button type="button" wire:click="fotoDelete({{ $foto->id }})"  class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
                                         </td>
                                     </tr>
                                 @empty

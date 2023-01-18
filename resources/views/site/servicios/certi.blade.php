@@ -36,7 +36,7 @@ certificado, energetico, tenerife, energético
                         <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
-                        <p class="text- text-center text-lg-start fs-4">Es una obligación</p>
+                        <p class="text- text-center text-lg-start fs-4">¿Por qué es necesario?</p>
                         <p class="text-muted text-center text-lg-start">El Real Decreto 235/2013, de 5 de abril obliga a todos los propietarios de viviendas, locales y edificios en venta o alquiler a obtener el certificado energético. Por tanto esta certificación de eficiencia energética es necesaria para vender o alquilar la mayoría de los inmuebles.</p>
                     </div>                    
                 </div>

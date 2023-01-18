@@ -25,66 +25,65 @@ class SiteController extends Controller{
 
     // Servicios
 
-    public function serviciosReDeCa(){
+    public function reformaDeCasas(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(4);
         return view('site.servicios.redeca', compact('categorias', 'servicio'));
     }
 
-    public function serviciosOfyLo(){
+    public function oficinasLocales(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(3);
         return view('site.servicios.ofylo', compact('categorias', 'servicio'));
     }
 
-    public function serviciosFacha(){
+    public function fachadas(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(2);
         return view('site.servicios.facha', compact('categorias', 'servicio'));
     }
 
-    public function serviciosElec(){
+    public function electricidad(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(1);
         return view('site.servicios.elec', compact('categorias', 'servicio'));
     }
 
-    public function serviciosPintu(){
+    public function pinturaDecoracion(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(5);
         return view('site.servicios.pintu', compact('categorias', 'servicio'));
     }
 
-    public function serviciosPladur(){
+    public function pladur(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(10);
         return view('site.servicios.pladur', compact('categorias', 'servicio'));
     }
 
-    public function serviciosAcero(){
+    public function forjadosAceros(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(7);
         return view('site.servicios.acero', compact('categorias', 'servicio'));
     }
 
-    public function serviciosCerti(){
+    public function certificadoEnergetico(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(8);
         return view('site.servicios.certi', compact('categorias', 'servicio'));
     }
 
-    public function serviciosObra(){
+    public function obraNueva(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(12);
         return view('site.servicios.obra', compact('categorias', 'servicio'));
     }
 
-    public function serviciosMadera(){
+    public function casasDeMadera(){
         $categorias = Categoria::orderBy('orden')->get();
         $servicio = Categoria::find(13);
         return view('site.servicios.madera', compact('categorias', 'servicio'));
     }
-
 
 
     // Fin de Servicios

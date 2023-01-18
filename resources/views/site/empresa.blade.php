@@ -49,7 +49,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-hand-thumbs-up text-primary display-4"></i>
+                                <i class="bi bi-hand-thumbs-up text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">TRANSPARENCIA</h3>
@@ -60,7 +60,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-award text-primary display-4"></i>
+                                <i class="bi bi-award text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">EXPERIENCIA</h3>
@@ -71,7 +71,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-tools text-primary display-4"></i>
+                                <i class="bi bi-tools text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">SERVICIOS</h3>
@@ -82,7 +82,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-info-circle text-primary display-4"></i>
+                                <i class="bi bi-info-circle text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">ATENCIÓN</h3>
@@ -93,7 +93,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-clock text-primary display-4"></i>
+                                <i class="bi bi-clock text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">TIEMPOS</h3>
@@ -104,7 +104,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-droplet text-primary display-4"></i>
+                                <i class="bi bi-droplet text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">LIMPIEZA</h3>
@@ -115,7 +115,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-shield-check text-primary display-4"></i>
+                                <i class="bi bi-shield-check text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">SEGURIDAD</h3>
@@ -126,7 +126,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-file-text text-primary display-4"></i>
+                                <i class="bi bi-file-text text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">LEGAL</h3>
@@ -137,7 +137,7 @@ empresa, reformas, servicios, tenerife
                     <div class="col-lg-4">
                         <div class="row ">
                             <div class="col-2 col-lg-3">
-                                <i class="bi bi-patch-check text-primary display-4"></i>
+                                <i class="bi bi-patch-check text-primary display-5"></i>
                             </div>
                             <div class="col-10 col-lg-9">
                                 <h3 class="fw-bold h5">GARANTÍA</h3>

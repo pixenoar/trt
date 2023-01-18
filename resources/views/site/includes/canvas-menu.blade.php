@@ -13,12 +13,12 @@
                 <a href="{{ route('site.empresa') }}" class="nav-link @if(request()->routeIs('site.empresa')) link-primary fw-bold @else link-light @endif ps-1">Empresa</a>
             </li>
             <li class="nav-item border-bottom border-secondary py-1">
-                <a href="#collapseInstitucional" class="nav-link @if(request()->routeIs('site.servicios')) link-primary fw-bold @else link-light @endif dropdown-toggle ps-1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseInstitucional">Servicios</a>
+                <a href="#collapseInstitucional" class="nav-link @if(request()->routeIs('site.servicios') || request()->routeIs('site.servicios.*')) link-primary fw-bold @else link-light @endif dropdown-toggle ps-1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseInstitucional">Servicios</a>
                 <div class="collapse" id="collapseInstitucional">
                     <ul class="nav flex-column small ms-3 my-2">
                     @foreach($categorias as $categoria)
                         <li class="nav-item">
-                            <a href="{{ route($categoria->ruta) }}" class="nav-link link-light">{{ $categoria->nombre }}</a>
+                            <a href="{{ route($categoria->ruta) }}" class="nav-link @if(request()->routeIs($categoria->ruta)) link-primary fw-bold @else link-light @endif">{{ $categoria->nombre }}</a>
                         </li>
                     @endforeach
                     </ul>

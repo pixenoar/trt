@@ -22,9 +22,6 @@
 
         @livewireStyles
 
-        <!-- Google tag (gtag.js) -->
-
-
     </head>
     <body>
         @yield('contenido')

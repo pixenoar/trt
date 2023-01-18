@@ -142,6 +142,13 @@ class TrabajosComponent extends Component{
         }
     }
 
+    public function fotoDelete($foto_id){
+        $foto = Foto::find($foto_id);
+        Storage::delete($foto->path);
+        $foto->delete();
+        $this->moTrabajo->refresh();
+    }
+
     // FIN FOTOS
 
     public function close(){

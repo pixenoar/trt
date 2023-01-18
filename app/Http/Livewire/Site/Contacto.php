@@ -10,6 +10,7 @@ class Contacto extends Component{
     public $telefono;
     public $email;
     public $mensaje;
+    public $recaptcha;
 
     // --------
 
@@ -20,6 +21,7 @@ class Contacto extends Component{
             'telefono' => 'required|string|max:255',
             'email' => 'required|email|string|max:255',
             'mensaje' => 'required|string|max:255',
+            'recaptcha' => 'required',
         ]);
 
         $this->reset(['nombre', 'telefono', 'email', 'mensaje']);
