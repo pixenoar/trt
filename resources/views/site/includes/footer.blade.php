@@ -1,19 +1,20 @@
-<section id="contacto">
-    <div class="container-fluid bg-grad-orange-blue py-4 py-lg-5">
-        <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center text-light">
-                        <h2 class="fw-bold">¿Necesitas una reforma?</h2>
-                        <p class="fw-light fs-5 my-3">Solicitanos un presupuesto sin compromiso</p>
-                        <a href="{{ route('site.contacto') }}" class="btn btn-light btn-sm fw-bold mt-4" role="button">CONTÁCTANOS</a>
+@if(!request()->routeIs('site.contacto'))
+    <section id="contacto">
+        <div class="container-fluid bg-grad-orange-blue py-4 py-lg-5">
+            <div class="container py-4 py-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center text-light">
+                            <h2 class="fw-bold">¿Necesitas una reforma?</h2>
+                            <p class="fw-light fs-5 my-3">Solicitanos un presupuesto sin compromiso</p>
+                            <a href="{{ route('site.contacto') }}" class="btn btn-light btn-sm fw-bold mt-4" role="button">CONTÁCTANOS</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
+@endif
 <section id="footer">
     <div class="container-fluid bg-footer-secondary d-none d-lg-block">
         <div class="container py-4 py-lg-5">
@@ -44,7 +45,7 @@
                 <div class="col-lg-4">
                     <h5 class="h6 text-white fw-bold mb-3">SERVICIOS</h5>
                     <ul class="nav flex-column">
-                    @foreach($categorias->take(10) as $categoria)
+                    @foreach($categorias as $categoria)
                         <li class="nav-item small">
                             <a href="{{ route($categoria->ruta) }}" class="nav-link link-light px-0 py-1">{{ $categoria->nombre }}</a>
                         </li>
@@ -65,7 +66,6 @@
                     <h5 class="h6 text-white fw-bold mt-5 mb-3"><i class="bi bi-clock me-1"></i> HORARIOS</h5>
                     <ul class="list-unstyled text-white small">
                         <li>Lunes a Viernes: 10 a 20 hs.</li>
-                        <li>Sábados: 00 a 00 hs.</li>
                     </ul>
                 </div>
             </div>

@@ -33,7 +33,7 @@ pinturores, pintura, tenerife
 
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/pintura/pintura-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
                         <p class="text- text-center text-lg-start fs-4">¿Está pensando en cambiar de estilo su casa?</p>
@@ -47,7 +47,7 @@ pinturores, pintura, tenerife
                         <p class="text-muted text-center text-lg-start">No trabajamos con precios definidos , elaboramos cada presupuesto despues de la conversacion con el cliente ya que cada casa es diferente y por ello cada cliente especial. Asi logramos conseguir la mejor relacion calidad precio.</p>
                     </div>    
                     <div class="col-lg-5 order-1 order-lg-2">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/pintura/pintura-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>                    
                 </div>
 

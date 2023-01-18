@@ -9,7 +9,7 @@
 
     <div class="d-lg-none text-end mb-4">
         <div class="dropdown-right">
-            <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,8"><i class="bi bi-filter"></i></button>
+            <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,8"><i class="bi bi-filter"></i> <span class="small">CATEGORIAS</span></button>
             <!--<a href="#" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-filter-circle-fill fs-2"></i></a>-->
             <ul class="dropdown-menu border-0 shadow">
                 <li class="px-2"><a href="javascript:void(0)" wire:click="setCategoria(0)" class="dropdown-item small fw-light @if($categoria_id == 0) active rounded-1 @endif">Todos</a></li>

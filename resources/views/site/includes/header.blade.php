@@ -19,7 +19,7 @@
                     Servicios
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdown-institucional">
-                @foreach($categorias->take(10) as $categoria)
+                @foreach($categorias as $categoria)
                     <li><a href="{{ route($categoria->ruta) }}" class="dropdown-item small @if(request()->routeIs($categoria->ruta)) active @endif">{{ $categoria->nombre }}</a></li>
                 @endforeach
                 </ul>

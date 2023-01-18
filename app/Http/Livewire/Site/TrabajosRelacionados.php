@@ -19,7 +19,7 @@ class TrabajosRelacionados extends Component{
 
     public function render(){
         return view('livewire.site.trabajos-relacionados', [
-            'trabajos' => Trabajo::where('estado', 1)->where('categoria_id', $this->moCategoria->id)->orderBy('created_at', 'desc')->limit(4)->get(),
+            'trabajos' => Trabajo::where('estado', 1)->where('categoria_id', $this->moCategoria->id)->orderBy('created_at', 'desc')->limit(3)->get(),
         ]);
     }
 

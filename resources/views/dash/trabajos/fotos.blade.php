@@ -21,12 +21,15 @@
                             </div>
                         </div>  
                         <div class="col-lg-12">
-                            <button type="submit" class="btn btn-primary text-white w-100" wire:target="storeFoto" wire:loading.class="disabled">
-                                <div wire:loading.remove wire:target="storeFoto">
+                            <button type="submit" class="btn btn-primary text-white w-100" wire:target="storeFoto,foto" wire:loading.class="disabled">
+                                <div wire:loading.remove wire:target="storeFoto,foto">
                                     Subir foto
+                                </div>
+                                <div wire:loading wire:target="foto">
+                                    espere...
                                 </div>                        
                                 <div wire:loading wire:target="storeFoto">
-                                    Subiendo...
+                                    subiendo...
                                 </div>
                             </button>
                         </div>                  

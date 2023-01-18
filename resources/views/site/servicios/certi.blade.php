@@ -33,7 +33,7 @@ certificado, energetico, tenerife, energético
 
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/certificado/certificado-1.jpg') }}" class="img-fluid shadow-" alt="Certificado Energético">
                     </div>
                     <div class="col-lg-5">
                         <p class="text- text-center text-lg-start fs-4">¿Por qué es necesario?</p>

@@ -33,7 +33,7 @@ reformas, tenerife, pintura, fachadas, reparación, restauración, rehabilitaci�
 
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/fachadas/fachadas-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
                         <p class="text- text-center text-lg-start fs-4">Trabajos verticales sin andamios en Tenerife</p>
@@ -48,7 +48,7 @@ reformas, tenerife, pintura, fachadas, reparación, restauración, rehabilitaci�
                         <p class="text-muted text-center text-lg-start">Nuestros Técnicos han sido certificados por la IRATA, (Industrial Rope Access Trade Association) Organismo de referencia internacional para la Certificación de trabajadores que realizan trabajos en altura <a href="https://irata.org" target="_blank" class="text-decoration-none">www.irata.org</a></p>
                     </div>    
                     <div class="col-lg-5 order-1 order-lg-2">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/fachadas/fachadas-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>                    
                 </div>
 

@@ -19,7 +19,7 @@ class TrabajosInterior extends Component{
     // --------
 
     public function mount(){
-        $this->moCategorias = Categoria::orderBy('orden')->limit(7)->get();
+        $this->moCategorias = Categoria::where('estado', 1)->orderBy('orden')->limit(7)->get();
     }
 
     public function setCategoria($categoria_id){

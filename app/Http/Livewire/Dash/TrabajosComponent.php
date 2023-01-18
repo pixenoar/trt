@@ -33,7 +33,7 @@ class TrabajosComponent extends Component{
     public $busqueda;
 
     public function mount(){
-        $this->categorias = Categoria::orderBy('nombre')->get();
+        $this->categorias = Categoria::where('estado', 1)->orderBy('orden')->get();
     }
 
     public function updatingBusqueda(){

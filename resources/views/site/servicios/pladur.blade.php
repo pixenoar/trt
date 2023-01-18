@@ -34,7 +34,7 @@ pladur, tenerife, trabajos, trabajo
 
                 <div class="row justify-content-around align-items-center gy-4 gy-lg-5">
                     <div class="col-lg-5">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/pladur/pladur-1.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>
                     <div class="col-lg-5">
                         <p class="text- text-center text-lg-start fs-4">Trabajos en Pladur</p>
@@ -47,7 +47,7 @@ pladur, tenerife, trabajos, trabajo
                         <p class="text-muted text-center text-lg-start">Realizamos trabajos de escayola y pladur en toda la isla de Tenerife</p>
                     </div>    
                     <div class="col-lg-5 order-1 order-lg-2">
-                        <img src="{{ asset('img/servicios/interior.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
+                        <img src="{{ asset('img/servicios/pladur/pladur-2.jpg') }}" class="img-fluid shadow-sm" alt="Reforma de Casas">
                     </div>                     
                 </div>
 
