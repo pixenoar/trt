@@ -55,12 +55,11 @@ reformas, tenerife, contacto
                             <div class="card-body">
                                 <h2 class="h5 fw-bold"><i class="bi bi-clock text-primary me-2"></i> HORARIOS</h2>
                                 <ul class="list-unstyled mb-0">
-                                    <li>Lunes a Viernes: 10 a 20 hs.</li>
-                                    <li>Sábados: 00 a 00 hs.</li>
+                                    <li>Lunes a Viernes: 09 a 18 hs.</li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="https://wa.me/+34627905132" target="_blank" class="btn btn-success text-white py-3 w-100" role="button"><i class="bi bi-whatsapp me-2"></i> Contáctanos por WhatsApp</a>
+                        <a href="https://wa.me/+34627905132" target="_blank" class="btn btn-success text-white w-100" role="button"><i class="bi bi-whatsapp me-2"></i> Contáctanos por WhatsApp</a>
                     </div>
 
                 </div>

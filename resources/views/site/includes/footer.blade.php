@@ -38,7 +38,7 @@
                             <a href="{{ route('site.contacto') }}" class="nav-link link-light px-0 py-1">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-light px-0 py-1">Política de Privacidad</a>
+                            <a href="{{ route('site.politica')}}" class="nav-link link-light px-0 py-1">Política de Privacidad</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                     </ul>
                     <h5 class="h6 text-white fw-bold mt-5 mb-3"><i class="bi bi-clock me-1"></i> HORARIOS</h5>
                     <ul class="list-unstyled text-white small">
-                        <li>Lunes a Viernes: 10 a 20 hs.</li>
+                        <li>Lunes a Viernes: 09 a 18 hs.</li>
                     </ul>
                 </div>
             </div>

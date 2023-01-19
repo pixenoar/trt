@@ -55,6 +55,8 @@ Route::get('garantia', [SiteController::class, 'garantia'])->name('site.garantia
 Route::redirect('garantia.php', 'garantia');
 Route::get('contacto', [SiteController::class, 'contacto'])->name('site.contacto');
 Route::redirect('contacto.php', 'contacto');
+Route::get('politica-privacidad', [SiteController::class, 'politica'])->name('site.politica');
+Route::redirect('politica-privacidad.php', 'politica-privacidad');
 
 // BackEnd
 

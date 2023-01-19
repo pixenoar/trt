@@ -102,5 +102,10 @@ class SiteController extends Controller{
         $categorias = Categoria::where('estado', 1)->orderBy('orden')->get();
         return view('site.contacto', compact('categorias'));
     }
+
+    public function politica(){
+        $categorias = Categoria::where('estado', 1)->orderBy('orden')->get();
+        return view('site.politica', compact('categorias'));
+    }
     
 }

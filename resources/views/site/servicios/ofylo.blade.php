@@ -39,7 +39,6 @@ reformas, tenerife, tiendas, restaurantes, fachadas, rehabilitacion, locales, in
                         <p class="text- text-center text-lg-start fs-4">Con la máxima garantía, rapidez y calidad</p>
                         <p class="text-muted text-center text-lg-start">Realizamos reformas de locales comerciales en Tenerife, tanto parciales como integrales, ya sean tiendas, oficinas, restaurantes y mucho más.</p>
                         <p class="text-muted text-center text-lg-start">Si ha pensado en abrir nueva oficina, comercio, rstaurante o en realizar en ellas un reforma, no dude en contactar con nosotros. Nuestra empresa posee dilatada expericia en el diseño y reforma negocios.</p>
-                        <p class="text-muted text-center text-lg-start">Los espacios de negocio, empiezan con un diseño eficaz, que integre confort y estética; siendo ésta, nuestra mejor carta de presentación. Entendemos las necesidades de nuestros clientes, por ello, garantizamos la mejor atención y la asesoría continua.</p>
                     </div>                    
                 </div>
 

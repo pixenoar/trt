@@ -39,7 +39,6 @@ proyectos, electricos, electricidad, tenerife
                     <div class="col-lg-5">
                         <p class="text- text-center text-lg-start fs-4">Disponemos de un servicio de Ingeniería de Instalaciones con gran experiencia</p>
                         <p class="text-muted text-center text-lg-start">En proyectos eléctricos ofrecemos un servicio Integral de instalaciones hasta su finalización y legalización ante el departamento de Industria o la Administración correspondiente, encargándonos de todo el proceso, ya sea la realización del proyecto, como el control de la buena ejecución de la instalación, asesoramiento al instalador profesional, control, dirección, y acompañamiento en las inspecciones correspondientes y necesarias, así como la orientación de las mejores soluciones para el buen funcionamiento y el ahorro energético.</p>
-                        <p class="text-muted text-center text-lg-start">Ofrecemos un servicio con total seriedad, profesionalidad y puntualidad, garantizando el cumplimiento de toda reglamentación siempre intentando ofrecer el mejor precio.</p>
                     </div>                  
                 </div>
 

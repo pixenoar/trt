@@ -3,7 +3,9 @@
     <div class="d-none d-lg-block text-center mb-5">
         <button type="button" wire:click="setCategoria(0)" class="btn btn-sm @if($categoria_id == 0) btn-dark @else btn-outline-dark  @endif">Todos</button>
         @foreach($moCategorias as $categoria)
-            <button type="button" wire:click="setCategoria({{ $categoria->id }})" class="btn btn-sm @if($categoria_id == $categoria->id) btn-dark @else btn-outline-dark  @endif">{{ $categoria->nombre }}</button>
+            @if($categoria->trabajos->count())
+                <button type="button" wire:click="setCategoria({{ $categoria->id }})" class="btn btn-sm @if($categoria_id == $categoria->id) btn-dark @else btn-outline-dark  @endif">{{ $categoria->nombre }}</button>
+            @endif
         @endforeach
     </div>
 
@@ -14,7 +16,9 @@
             <ul class="dropdown-menu border-0 shadow">
                 <li class="px-2"><a href="javascript:void(0)" wire:click="setCategoria(0)" class="dropdown-item small fw-light @if($categoria_id == 0) active rounded-1 @endif">Todos</a></li>
                 @foreach($moCategorias as $categoria)
-                    <li class="px-2"><a href="javascript:void(0)" wire:click="setCategoria({{ $categoria->id }})" class="dropdown-item small fw-light @if($categoria_id == $categoria->id) active rounded-1 @endif"">{{ $categoria->nombre }}</a></li>
+                    @if($categoria->trabajos->count())
+                        <li class="px-2"><a href="javascript:void(0)" wire:click="setCategoria({{ $categoria->id }})" class="dropdown-item small fw-light @if($categoria_id == $categoria->id) active rounded-1 @endif"">{{ $categoria->nombre }}</a></li>
+                    @endif
                 @endforeach
             </ul>
         </div>

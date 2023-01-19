@@ -37,7 +37,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="form-floating">
-                    <textarea class="form-control @error('mensaje') is-invalid @enderror" wire:model.defer="mensaje" id="mensaje" placeholder="Mensaje" style="height: 16rem"></textarea>
+                    <textarea class="form-control @error('mensaje') is-invalid @enderror" wire:model.defer="mensaje" id="mensaje" placeholder="Mensaje" style="height: 12rem"></textarea>
                     <label for="mensaje">Mensaje</label>
                     @error('mensaje')
                         <span class="invalid-feedback">

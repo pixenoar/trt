@@ -34,7 +34,7 @@
                 <a href="{{ route('site.contacto') }}" class="nav-link @if(request()->routeIs('site.contacto')) link-primary fw-bold @else link-light @endif ps-1">Contacto</a>
             </li>
             <li class="nav-item py-1">
-                <a href="#" class="nav-link link-light ps-1">Política de Privacidad</a>
+                <a href="{{ route('site.politica') }}" class="nav-link link-light ps-1">Política de Privacidad</a>
             </li>
         </ul>
         <a href="{{ route('site.contacto') }}" class="btn btn-primary btn-sm fw-bold text-white w-100" role="button">SOLICITAR PRESUPUESTO</a>
