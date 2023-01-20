@@ -46,7 +46,7 @@ reformas, tenerife, contacto
                             <div class="card-body">
                                 <h2 class="h5 fw-bold"><i class="bi bi-megaphone text-primary me-2"></i> VÍAS DE CONTACTO</h2>
                                 <ul class="list-unstyled mb-0">
-                                    <li>+34 627 905 132</li>
+                                    <li>627 905 132</li>
                                     <li><img src="{{ asset('img/svg/email-black.svg') }}" alt="Correo Electrónico"></li>
                                 </ul>
                             </div>

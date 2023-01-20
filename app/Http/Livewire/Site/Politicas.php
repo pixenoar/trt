@@ -16,7 +16,7 @@ class Politicas extends Component{
     }
 
     public function aceptar(){
-        Cookie::queue('politicas', 'aceptada');        
+        Cookie::queue('politicas', 'aceptada', 43200);        
         $this->cookie = true;
     }
 

@@ -14,8 +14,8 @@
             
             <div class="modal-body">
                 <div class="text-center">
-                    <h2 class="fw-bold mb-0">+34 627 905 132</h3>
-                    <span>Lun. a Vie. 10 a 20 hs.</span>
+                    <h2 class="fw-bold mb-0">627 905 132</h3>
+                    <span>Lun. a Vie. 09 a 18 hs.</span>
                     <a href="tel:+34627905132" class="btn btn-primary text-white fw-bold w-100 my-4" role="button">LLAMAR</a>
                     <p class="small">Por favor, si llama y no podemos contestar, intentelo de nuevo pasado unos minutos.</p>                    
                 </div>

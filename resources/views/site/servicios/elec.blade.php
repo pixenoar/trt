@@ -48,7 +48,7 @@ proyectos, electricos, electricidad, tenerife
                         <div class="col-lg-6">
                             <div class="alert alert-primary m-0" role="alert">
                                 <i class="bi bi-check-circle me-1"></i> Sellado de Boletines de BT
-                                <br><span class="small">Lorem ipsum es simplemente el texto de relleno.</span>
+                                <br><span class="small">Planos eléctricos, diagramas unifilares, sistemas de puesta a tierra, etc.</span>
                             </div>
                         </div>
                         <div class="col-lg-6">

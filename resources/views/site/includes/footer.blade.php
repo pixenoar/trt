@@ -60,7 +60,7 @@
                     </ul>
                     <h5 class="h6 text-white fw-bold mt-5 mb-3"><i class="bi bi-megaphone me-1"></i> VÍAS DE CONTACTO</h5>
                     <ul class="list-unstyled text-white small">
-                        <li>+34 627 905 132</li>
+                        <li>627 905 132</li>
                         <li><img src="{{ asset('img/svg/email.svg') }}" alt="Correo Electrónico"></li>
                     </ul>
                     <h5 class="h6 text-white fw-bold mt-5 mb-3"><i class="bi bi-clock me-1"></i> HORARIOS</h5>

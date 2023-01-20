@@ -29,7 +29,7 @@ class TrabajosInterior extends Component{
     }
 
     public function cargar(){
-        $this->cantidad = $this->cantidad + 3;
+        $this->cantidad = $this->cantidad + 6;
         usleep(200000);
     }  
 
