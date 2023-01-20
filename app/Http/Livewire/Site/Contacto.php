@@ -11,21 +11,30 @@ class Contacto extends Component{
     public $telefono;
     public $email;
     public $mensaje;
+    public $captcha;
 
     // --------
 
     public function enviar(){
 
-        $this->validate([
-            'nombre' => 'required|string|max:255',
-            'telefono' => 'required|string|max:255',
-            'email' => 'required|email|string|max:255',
-            'mensaje' => 'required|string|max:255',
-        ]);
+        $this->validate(
+            [
+            'nombre' => 'required|string|max:128',
+            'telefono' => 'required|string|max:128',
+            'email' => 'required|email|string|max:128',
+            'mensaje' => 'required|string',
+            'captcha' => 'required|integer|size:10',
+            ],
+            [
+                'captcha.size' => 'La suma es incorrecta.',
+            ]
+        );
 
-        Mail::to('contacto@todoreformastenerife.com')->send(new FormularioContacto($this->nombre, $this->telefono, $this->email, $this->mensaje));
+        if($this->captcha == 10){
+            Mail::to('gestion@todoreformastenerife.com')->send(new FormularioContacto($this->nombre, $this->telefono, $this->email, $this->mensaje));
+        }
 
-        $this->reset(['nombre', 'telefono', 'email', 'mensaje']);
+        $this->reset(['nombre', 'telefono', 'email', 'mensaje', 'captcha']);
 
         session()->flash('enviado', 'Gracias por utilizar nuestro servicio de contacto, respondemos diariamente todas las consultas.');
         

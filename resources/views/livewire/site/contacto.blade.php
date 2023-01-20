@@ -1,6 +1,6 @@
 <div>
 
-    <form wire:submit.prevent="enviar">
+    <form wire:submit.prevent="enviar" novalidate>
         <div class="row justify-content-center align-items-center g-3">
             <div class="col-lg-12">
                 <div class="form-floating">
@@ -40,6 +40,17 @@
                     <textarea class="form-control @error('mensaje') is-invalid @enderror" wire:model.defer="mensaje" id="mensaje" placeholder="Mensaje" style="height: 12rem"></textarea>
                     <label for="mensaje">Mensaje</label>
                     @error('mensaje')
+                        <span class="invalid-feedback">
+                            {{ $message }}
+                        </span>
+                    @enderror
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control @error('captcha') is-invalid @enderror" id="captcha" wire:model.defer="captcha" placeholder="Captcha">
+                    <label for="captcha">El resultado de 5+5</label>
+                    @error('captcha')
                         <span class="invalid-feedback">
                             {{ $message }}
                         </span>
