@@ -30,7 +30,7 @@ class FormularioContacto extends Mailable{
 
     public function envelope(){
         return new Envelope(
-            subject: 'Consulta desde el formulario de contacto',
+            subject: 'Consulta web Todo Reformas Tenerife',
             replyTo: [
                 new Address($this->email, $this->nombre),
             ],
